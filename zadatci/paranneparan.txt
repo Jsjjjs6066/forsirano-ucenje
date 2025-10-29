@@ -1,0 +1,3 @@
+Unesi n (cijeli broj)
+
+Ako je n paran ispiši "PARAN", a ako je neparan ispiši "NEPARAN".
