@@ -1,6 +1,6 @@
-n = int(input())
+x = int(input())
 
-if n >= 21:
+if x <= 50:
     print("DA")
 else:
     print("NE")
