@@ -1,0 +1,21 @@
+Đuro Horvat ima n godina. Prvi put odlazi u SAD. U SADu osoba postaje punoljetna kada napuni 21. godinu ali Đuro to ne zna. Pomozite Đuri.
+
+Unos
+U prvom retku nalazi se cijeli broj n (0 <= n <= 100), starost Đure.
+
+Izlaz
+U prvom retku ispišite "DA" ako je Đuro punoljetan u SADu. Ako nije ispišite "NE".
+
+Testni primjeri:
+
+0     1
+---   ---
+NE    NE
+
+18    21
+---   ---
+NE    DA
+
+22    100
+---   ---
+DA    DA
