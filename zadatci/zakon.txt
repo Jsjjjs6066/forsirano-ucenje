@@ -1,0 +1,19 @@
+Đuro Horvat n km/h u naseljenom mjestu. 
+Po zakonu RH u naseljenim mjestima se ne smije voziti brže od 50 km/h.
+Pomozite Đuri Horvatu i recite mu drži li se zakona ili ne.
+
+Unos
+U prvom retku nalazi se cijeli broj n (0 < n <= 200), Brzina vožnje.
+
+Izlaz
+U prvom retku ispišite "DA" ako se Đuro drži zakona. Ako ne ispišite "NE".
+
+Testni primjeri:
+
+100   200   22 
+---   ---   ---
+NE    NE    DA 
+
+51    50    49
+---   ---   ---
+NE    DA    DA 

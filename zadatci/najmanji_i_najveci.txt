@@ -1,0 +1,25 @@
+Imate listu cijelih brojeva duljine n imena x.                         
+Vaš je zadatak ispisati najmanji broj u listi x i njegov indeks 
+te najveći broj u listi x i njegov indeks.                                
+                                                                       
+Unos                                                                   
+U prvom retku nalazi se cijeli broj n (0 < n <= 100), duljina 
+liste x. 
+U sljedećih n redaka nalaze se elementi liste gdje za svaki 
+element liste x vrijedi 
+(0 <= x s indeksom i <= 100, 1 <= i <= n).             
+                                                                       
+Izlaz                                                                  
+U prvom retku ispišite najmanji broj u listi x i njegov indeks 
+(gdje vrijedi da je prvi indeks 0).                                          
+U drugom retku ispišite najveći broj u listi x i njegov indeks 
+(gdje vrijedi da je prvi indeks 0).                                          
+                                                                       
+                                                                       
+                                                                       
+                                                                       
+                                                                       
+                                                                       
+                                                                       
+                                                                       
+                                                                       
