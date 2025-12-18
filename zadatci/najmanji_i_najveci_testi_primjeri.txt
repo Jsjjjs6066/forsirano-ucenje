@@ -1,3 +1,5 @@
+Unos treba biti sve ispod crte osim ove rečenice i "Testni primjer:", a vaš kod treba ispisati on što se nalazi ispod crte.
+
 Testni primjer:
 
 6
