@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forsirano učenje</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/3.0.1/js.cookie.min.js"></script>
+    <header>
+        <div id="nav">
+            <h1 class="nav-header">Uvod</h1>
+        </div>
+    </header>
+    <div id="main">
+        <h1>Web prikaz materijala Forsiranoga učenja</h1>
+        <div class="section">
+            <center>
+                <h1 class="section-header">
+                    Osnove
+                </h1>
+            </center>
+            <div class="item" id="ispis-container">
+                <input class="lesson-checkbox" type="checkbox" name="ispis" id="ispis" onchange="check_section('ispis')">
+                <a class="lesson-link" href="lessons/osnove/ispis.html">Ispis</a>
+            </div>
+        </div>
+    </div>
+    <script src="scripts/main.js"></script>
+</body>
+</html>

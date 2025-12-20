@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ispis - Forsirano učenje</title>
+    <link rel="stylesheet" href="/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism.min.css" rel="stylesheet"
+        id="theme-style" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism-dark.min.css" rel="stylesheet"
+        media="(prefers-color-scheme: dark)" />
+</head>
+
+<body>
+    <header>
+        <div id="nav">
+            <h1><a href="/index.html" class="nav-link">Uvod</a> / Osnove / Ispis</h1>
+        </div>
+    </header>
+    <div id="main">
+        <h1>Ispis</h1>
+        <h2>Što je ispisivanje?</h2>
+        <p>Ispisivanje je proces koji će tekst, brojke, simbole i druge informacije ispisati na ekranu.</p>
+        <h2>Ispisivanje u Pythonu</h2>
+        <p>U Pythonu ispisivanje se može izvesti koristeći funkciju <code class="language-python">print</code>.</p>
+        <pre><code class="language-python">print("Hello world!")</code></pre>
+        <p>Ispisuje "Hello world!" (bez navodnika)</p>
+
+        <pre><code class="language-python">print("Hello", "netko!")</code></pre>
+        <p>U <code class="language-python">print</code> funkciji kada odvojimo nešto zarezom, dodat će razmak između.
+        </p>
+
+        <pre><code class="language-python">print("\nHello!")</code></pre>
+        <p>"<code class="language-python">\n</code>" ide u sljedeći red.</p>
+
+        <p><code class="language-python">print</code> funkcija će automatski staviti taj znak nakon svakog ispisa.</p>
+        <p>Možemo staviti na kraju funkcije tako da ode dva reda ispod umjesto jednog.</p>
+        <p>Što će se dogoditi ako "<code class="language-python">\n</code>" stavimo dva puta?</p>
+
+        <p>Ako ne želimo da završi s time možemo promjeniti <code class="language-python">end</code> argument u
+            funkciji.</p>
+        <pre><code class="language-python">print("Hello", end=" ")</code></pre>
+        <p>Završava s " " umjesto "<code class="language-python">\n</code>".</p>
+
+        <pre><code class="language-python">print("world!\n")</code></pre>
+        <p>Provjeri radi li.</p>
+
+        <p><code class="language-python">end</code> argument može i biti prazan string ("").</p>
+        <pre><code class="language-python">print("H", end="")
+print("I")</code></pre>
+    </div>
+</body>
+
+</html>

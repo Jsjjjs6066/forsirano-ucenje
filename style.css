@@ -1,0 +1,127 @@
+:root {
+    --primary-color: #3498db;
+    /* Light theme primary color */
+    --background-color: #ffffff;
+    /* Light theme background */
+    --text-color: #2c3e50;
+    /* Light theme text color */
+    --section-color: #ffffffd6;
+    --tri-color: #ffffffb4;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --primary-color: #2980b9;
+        /* Dark theme primary color */
+        --background-color: #1a1a1a;
+        /* Dark theme background */
+        --text-color: #ecf0f1;
+        /* Dark theme text color */
+        --section-color: #1f1f1f;
+        --tri-color: #232323;
+    }
+}
+
+h1 {
+    font-size: 3em;
+}
+h2 {
+    font-size: 2.5em;
+}
+
+p {
+    font-size: 1.5em;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+}
+
+.nav-link {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+#main {
+    background-color: var(--section-color);
+    margin: 0px 30px 30px 30px;
+    border-radius: 20px;
+    flex: 1;
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.section {
+    background-color: var(--tri-color);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.lesson-link {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-size: 2.5em;
+}
+
+pre {
+    background-color: var(--background-color);
+    padding: 2px;
+    border-radius: 5px;
+    font-size: 1.5em;
+    
+}
+
+.lesson-checkbox {
+    margin-right: 20px;
+    appearance: none;
+    -webkit-appearance: none;
+    width: 2.5em;
+    height: 2.5em;
+    border: 2px solid var(--text-color);
+    border-radius: 10px;
+    display: inline-grid;
+    place-content: center;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+.lesson-checkbox::before {
+    content: "";
+    width: 1.7em;
+    height: 1.7em;
+    transform: scale(0);
+    box-shadow: inset 1em 1em white;
+    transform-origin: center;
+    clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+    transition: 120ms transform ease-in-out;
+}
+
+.lesson-checkbox:checked {
+    background-color: #2ecc71;
+    border-color: #2ecc71;
+}
+
+.lesson-checkbox:checked::before {
+    transform: scale(1);
+}
+
+.item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
