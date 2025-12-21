@@ -1,18 +1,18 @@
-const lessons = ["ispis"];
+const lessons = ["ispis", "varijable", "operatori", "string", "usporedjivanje", "if", "input"];
 
 function get_lessons() {
     lessons.forEach((lesson) => {
-        if (Cookies.get(lesson) === "da") {
+        if (localStorage.getItem(lesson) === "da") {
             document.getElementById(lesson).checked = true;
         }
     });
 }
 
 function check_section(section) {
-    if (Cookies.get(section) === "da") {
-        Cookies.remove(section);
+    if (localStorage.getItem(section) === "da") {
+        localStorage.removeItem(section);
     } else {
-        Cookies.set(section, "da");
+        localStorage.setItem(section, "da");
     }
 }
 

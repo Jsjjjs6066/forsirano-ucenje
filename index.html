@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forsirano učenje</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/3.0.1/js.cookie.min.js"></script>
     <header>
@@ -22,11 +24,42 @@
                 </h1>
             </center>
             <div class="item" id="ispis-container">
-                <input class="lesson-checkbox" type="checkbox" name="ispis" id="ispis" onchange="check_section('ispis')">
+                <input class="lesson-checkbox" type="checkbox" name="ispis" id="ispis"
+                    onchange="check_section('ispis')">
                 <a class="lesson-link" href="lessons/osnove/ispis.html">Ispis</a>
+            </div>
+            <div class="item" id="varijable-container">
+                <input class="lesson-checkbox" type="checkbox" name="varijable" id="varijable"
+                    onchange="check_section('varijable')">
+                <a class="lesson-link" href="lessons/osnove/varijable.html">Varijable</a>
+            </div>
+            <div class="item" id="operatori-container">
+                <input class="lesson-checkbox" type="checkbox" name="operatori" id="operatori"
+                    onchange="check_section('operatori')">
+                <a class="lesson-link" href="lessons/osnove/operatori.html">Operatori</a>
+            </div>
+            <div class="item" id="string-container">
+                <input class="lesson-checkbox" type="checkbox" name="string" id="string"
+                    onchange="check_section('string')">
+                <a class="lesson-link" href="lessons/osnove/string.html">String</a>
+            </div>
+            <div class="item" id="usporedjivanje-container">
+                <input class="lesson-checkbox" type="checkbox" name="usporedjivanje" id="usporedjivanje"
+                    onchange="check_section('usporedjivanje')">
+                <a class="lesson-link" href="lessons/osnove/usporedjivanje.html">Uspoređivanje</a>
+            </div>
+            <div class="item" id="if-container">
+                <input class="lesson-checkbox" type="checkbox" name="if" id="if" onchange="check_section('if')">
+                <a class="lesson-link" href="lessons/osnove/if.html">If naredba</a>
+            </div>
+            <div class="item" id="input-container">
+                <input class="lesson-checkbox" type="checkbox" name="input" id="input"
+                    onchange="check_section('input')">
+                <a class="lesson-link" href="lessons/osnove/input.html">Input</a>
             </div>
         </div>
     </div>
     <script src="scripts/main.js"></script>
 </body>
+
 </html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String - Forsirano učenje</title>
+    <link rel="stylesheet" href="/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism.min.css" rel="stylesheet"
+        id="theme-style" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism-dark.min.css" rel="stylesheet"
+        media="(prefers-color-scheme: dark)" />
+    <script src="/scripts/lessons.js"></script>
+</head>
+
+<body>
+    <header>
+        <div id="nav">
+            <h1><a href="/index.html" class="nav-link">Uvod</a> / Osnove / String</h1>
+        </div>
+    </header>
+    <div id="main">
+        <h1>String</h1>
+        <pre><code class="language-python">string = "jhskhusifhuihfuhdz"</code></pre>
+        <p>Varijabla koja sadrži string</p>
+        <p style="white-space: pre-wrap; font-family: monospace;">    string
+    |
+    ------
+    |    |</p>
+        <pre><code class="language-python">print(string)</code></pre>
+        <p>Ispisuje cijeli string ("jhskhusifhuihfuhdz")</p>
+        <p style="white-space: pre-wrap; font-family: monospace;">    int
+    |
+    -----------
+    |         |
+    |  string |
+    |   |     |
+    |   ------|
+    |   |    ||</p>
+        <pre><code class="language-python">print(len(string))</code></pre>
+        <p>Funkcija len() vraća broj znakova u stringu (duljinu)</p>
+        <p style="white-space: pre-wrap; font-family: monospace;">    string
+    |
+    ---------
+    |       |
+    |    int|
+    |      ||</p>
+        <pre><code class="language-python">print(string[0])</code></pre>
+        <p>Dohvaća znak na indeksu 0 (prvi znak u stringu)</p>
+        <p style="white-space: pre-wrap; font-family: monospace;">    string
+    |
+    -----------------------
+    |                     |
+    |      int            |
+    |      |              |
+    |      ---------------|
+    |      |             ||
+    |      |   string    ||
+    |      |   |         ||
+    |      |   ------    ||
+    |      |   |    |    ||</p>
+        <pre><code class="language-python">print(string[len(string) - 1])</code></pre>
+        <p>Dohvaća zadnji znak stringa
+len(string) vraća duljinu (npr. 18), a -1 jer indeksi počinju od 0</p>
+        <p style="white-space: pre-wrap; font-family: monospace;">       string
+       |
+       -------------------
+       |                 |
+       |      int        |
+       |      |          |
+       |      -----------|
+       |      |         ||
+       |      |   string||
+       |      |   |     ||
+       |      |   ------||
+       |      |   |    |||</p>
+        <pre><code class="language-python">"""print(string[len(string)])"""</code></pre>
+        <p>Daje error
+Jer len(string) vraća duljinu 18, ali zadnji indeks je 17</p>
+        <button class="complete-button" onclick="completeLesson('string')">
+            Završi!
+        </button>
+    </div>
+</body>
+
+</html>

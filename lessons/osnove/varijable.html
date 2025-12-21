@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <title>Varijable - Forsirano učenje
+    </title>
+    <link rel="stylesheet"
+        href="/style.css">
+    <link
+        href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism.min.css"
+        rel="stylesheet"
+        id="theme-style" />
+    <link
+        href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism-dark.min.css"
+        rel="stylesheet"
+        media="(prefers-color-scheme: dark)" />
+    <script
+        src="/scripts/lessons.js"></script>
+</head>
+
+<body>
+    <header>
+        <div id="nav">
+            <h1><a href="/index.html"
+                    class="nav-link">Uvod</a>
+                / Osnove / Varijable
+            </h1>
+        </div>
+    </header>
+    <div id="main">
+        <h1>Varijable</h1>
+        <p>Varijable imaju svoje ime i
+            vrijednost. U Pythonu možemo
+            koristiti varijable kako
+            bismo pohranili vrijednosti.
+            Deklariramo varijable tako
+            što napišemo ime varijable,
+            jednakost ( = ) i
+            vrijednost. Na primjer:</p>
+        <pre><code class="language-python">x = 0</code></pre>
+        <p>Ime varijable je "x", a
+            vrijednost 0</p>
+        <br>
+        <p>Varijable mogu imati
+            različite tipove
+            vrijednosti:</p>
+        <pre><code class="language-python">a = 1</code></pre>
+        <p> Cijeli broj (int)</p>
+        <pre><code class="language-python">b = 1.2</code></pre>
+        <p> Decimalni broj (float)</p>
+        <pre><code class="language-python">c = "abc"</code></pre>
+        <p> Skupina znakova (svaki znak
+            može biti broj, slovo,
+            "."...) (string)</p>
+        <pre><code class="language-python">d = True</code></pre>
+        <p> Točno ili netočno (boolean)
+        </p>
+        <br>
+        <p>Možemo ispisati vrijednosti
+            varijabli tako što napišemo
+            ime varijable u <code
+                class="language-python">print</code>
+            funkciju bez navodnika:</p>
+        <pre><code class="language-python">a = 10
+print(a)</code></pre>
+        <p>Na ovaj način možemo ispisati
+            kombinaciju imena varijable
+            i vrijednosti:</p>
+        <pre><code class="language-python">print("a:", a)
+print("b:", b)
+print("c:", c)
+print("d:", d)</code></pre>
+        <p>Lakši način za ispisivanje s
+            varijablama:</p>
+        <pre><code class="language-python">print(f"\nVrijednost varijable a je {a}!")
+print(f"Vrijednost varijable b je {b}!")
+print(f"Vrijednost varijable c je {c}!")
+print(f"Vrijednost varijable d je {d}!")</code></pre>
+        <p>Stavimo <code
+                class="language-python">f</code>
+            prije navodnika kako bismo
+            napravili f-string.
+            Tamo gdje stavimo vitičaste
+            zagrade <code
+                class="language-python">{</code>
+            i <code
+                class="language-python">}</code>
+            stavit će vrijednost
+            varijable
+            čije smo ime stavili.</p>
+        <br>
+        <p> Možemo i promjeniti
+            vrijednost varijable:</p>
+        <pre><code class="language-python">a = 10
+<div class="hoverable-code" onmouseover="this.innerText = 'Ispisuje 10'" onmouseleave="this.innerText = 'print(a)'">print(a)</div>
+a = 20
+<div class="hoverable-code" onmouseover="this.innerText = 'Ispisuje 20'" onmouseleave="this.innerText = 'print(a)'">print(a)</div></code></pre>
+        <button class="complete-button"
+            onclick="completeLesson('varijable')">
+            Završi!
+        </button>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input - Forsirano učenje</title>
+    <link rel="stylesheet" href="/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism.min.css" rel="stylesheet"
+        id="theme-style" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism-dark.min.css" rel="stylesheet"
+        media="(prefers-color-scheme: dark)" />
+    <script src="/scripts/lessons.js"></script>
+</head>
+
+<body>
+    <header>
+        <div id="nav">
+            <h1><a href="/index.html" class="nav-link">Uvod</a> / Osnove / Input</h1>
+        </div>
+    </header>
+    <div id="main">
+        <h1>Input</h1>
+        <pre><code class="language-python">""" s = input() """</code></pre>
+        <p> vraća string</p>
+        <pre><code class="language-python">""" print(s + 1) """</code></pre>
+        <p> Daje error (zbrajanje stringa i inta)</p>
+        <p style="white-space: pre-wrap; font-family: monospace;">  int
+  |
+  ------------
+  |          |
+  |   string |
+  |   |      |
+  |   -------|
+  |   |     ||</p>
+        <pre><code class="language-python">n = int(input())</code></pre>
+        <p style="white-space: pre-wrap; font-family: monospace;">   |   |
+   |   -- Uzima unos, vraća string
+   -- Pretvara neki tip koji se nalazi u zagradama (u ovom slučaju string) u int</p>
+        <p style="white-space: pre-wrap; font-family: monospace;">    int
+    |
+    -----
+    |   |</p>
+        <pre><code class="language-python">print(n + 1)</code></pre>
+        <p style="white-space: pre-wrap; font-family: monospace;"> Dobro (zbrajanje inta i inta)
+    |   |
+    ------ Intovi</p>
+        <p style="white-space: pre-wrap; font-family: monospace;">    string   string    string
+    |        |              |
+    ------   ---   ----------
+    |    |   | |   |        |</p>
+        <pre><code class="language-python">print(str(n) + " " + str(n + 1))</code></pre>
+        <p style="white-space: pre-wrap; font-family: monospace;"> Ispisuje n pa razmak pa n+1
+     |  |  |     |  |  |   |
+     |  |  |     |  |  ------ Zbrojimo int iz varijable "n" i int "1"
+     |  |  |     |  -- Pretvaramo neki tip koji se nalazi u zagradama (u ovom slučaju int) u string
+     |  |  |     -- Prijašnje dobivenom stringu dodajemo string s desna
+     |  |  --Prijašnje dobivenom stringu dadajemo string s desna (u ovom slučaju " ")
+     |  -- Int iz varijable "n"
+     -- Pretvaramo neki tip koji se nalazi u zagradama (u ovom slučaju int) u string</p>
+        <button class="complete-button" onclick="completeLesson('input')">
+            Završi!
+        </button>
+    </div>
+</body>
+
+</html>

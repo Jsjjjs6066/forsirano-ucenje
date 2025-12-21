@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>If naredba - Forsirano učenje</title>
+    <link rel="stylesheet" href="/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism.min.css" rel="stylesheet"
+        id="theme-style" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism-dark.min.css" rel="stylesheet"
+        media="(prefers-color-scheme: dark)" />
+    <script src="/scripts/lessons.js"></script>
+</head>
+
+<body>
+    <header>
+        <div id="nav">
+            <h1><a href="/index.html" class="nav-link">Uvod</a> / Osnove / If naredba</h1>
+        </div>
+    </header>
+    <div id="main">
+        <h1>If naredba</h1>
+        <pre><code class="language-python">s = input()</code></pre>
+        <p style="white-space: pre-wrap; font-family: monospace;">|   |
+|   -- Uzima unos korisnika i vraća string
+-- Spremamo dobiveni string u varijablu s</p>
+        <p style="white-space: pre-wrap; font-family: monospace;">Ako je unos jednak stringu "Borna"
+ -- Varijabla koja sadrži unos korisnika
+ | -- Operator usporedbe (provjerava jesu li dvije vrijednosti jednake)
+ | |     -- String s kojim uspoređujemo
+ | |     |</p>
+        <pre><code class="language-python">if s == "Borna":
+    print("Los") </code></pre>
+        <p> Ispisuje "Los" ako je unos bio "Borna"</p>
+        <p>elif = else if, tj. "ako nije prethodno, ali je ovo istina"
+Provjerava je li unos jednak stringu "Luka"</p>
+        <pre><code class="language-python">elif s == "Luka":
+    print("Još gori") </code></pre>
+        <p> Ispisuje "Još gori" ako je unos bio "Luka"</p>
+        <p>else = ako nije zadovoljen nijedan prethodni uvjet</p>
+        <pre><code class="language-python">else:
+    print("idk") </code></pre>
+        <p> Ispisuje "idk" ako unos nije ni "Borna" ni "Luka"</p>
+        <button class="complete-button" onclick="completeLesson('if')">
+            Završi!
+        </button>
+    </div>
+</body>
+
+</html>

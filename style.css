@@ -5,8 +5,10 @@
     /* Light theme background */
     --text-color: #2c3e50;
     /* Light theme text color */
-    --section-color: #ffffffd6;
-    --tri-color: #ffffffb4;
+    --section-color: #f6f6f6;
+    --tri-color: #f0f0f0;
+
+    --complete-button-color: #2ecc71;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -19,6 +21,7 @@
         /* Dark theme text color */
         --section-color: #1f1f1f;
         --tri-color: #232323;
+        --complete-button-color: #27a85c;
     }
 }
 
@@ -46,7 +49,7 @@ body {
     color: var(--text-color);
     margin: 0;
     padding: 0;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     font-family: Arial, sans-serif;
@@ -124,4 +127,25 @@ pre {
     display: flex;
     flex-direction: row;
     align-items: center;
+}
+
+.complete-button {
+    width: 100%;
+    height: 2.5em;
+    color: var(--text-color);
+    background-color: var(--tri-color);
+    border-radius: 20px;
+    border: 2px solid var(--complete-button-color);
+    cursor: pointer;
+    font-size: 4em;
+    font-weight: bold;
+}
+
+.complete-button:hover {
+    background-color: var(--complete-button-color);
+}
+
+.hoverable-code {
+    cursor: pointer;
+    color: var(--primary-color);
 }
