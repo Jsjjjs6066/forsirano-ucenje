@@ -1,4 +1,4 @@
 function completeLesson(lesson) {
     localStorage.setItem(lesson, "da");
-    location.href = "/";
+    location.href = "../../index.html";
 }
