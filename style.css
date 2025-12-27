@@ -29,6 +29,10 @@
     }
 }
 
+a {
+    -webkit-tap-highlight-color: transparent;
+}
+
 h1 {
     font-size: 3em;
 }
@@ -57,6 +61,7 @@ body {
     display: flex;
     flex-direction: column;
     font-family: Arial, sans-serif;
+    width: 100%;
 }
 
 .nav-link {
@@ -77,6 +82,8 @@ body {
     background-color: var(--tri-color);
     padding: 20px;
     border-radius: 20px;
+    overflow-x: auto;      /* Adds a scrollbar ONLY when content overflows */
+    -webkit-overflow-scrolling: touch; /* Makes scrolling smooth on iPhones/iPads */
 }
 
 .lesson-link {
@@ -105,6 +112,7 @@ pre {
     place-content: center;
     cursor: pointer;
     vertical-align: middle;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .lesson-checkbox::before {
@@ -112,9 +120,10 @@ pre {
     width: 1.7em;
     height: 1.7em;
     transform: scale(0);
-    box-shadow: inset 1em 1em white;
+    background-color: white; /* Simpler than box-shadow for a solid fill */
     transform-origin: center;
-    clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+    /* Updated coordinates to fix the notch */
+    clip-path: polygon(14% 44%, 0% 58%, 38% 100%, 100% 16%, 80% 0%, 43% 62%);
     transition: 120ms transform ease-in-out;
 }
 
@@ -143,6 +152,7 @@ pre {
     cursor: pointer;
     font-size: 4em;
     font-weight: bold;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .complete-button:hover {
@@ -172,4 +182,35 @@ pre {
     margin: 0;
     user-select: none;
     -webkit-user-select: none;
+}
+th {
+    font-size: 1.75em;
+    padding: 10px;
+    margin: 0;
+    border: 3px solid white;
+    /* border-radius: 5px; */
+}
+tbody {
+    /* border-radius: 10px; */
+    padding: 10px;
+}
+
+td {
+    font-size: 1.5em;
+    padding: 10px;
+    margin: 0;
+    border: 1px solid white;
+    /* border-radius: 5px; */
+}
+
+table {
+    border-spacing: 0;
+    background-color: var(--tri-color);
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.table-cont {
+    overflow-x: auto;      /* Adds a scrollbar ONLY when content overflows */
+    -webkit-overflow-scrolling: touch; /* Makes scrolling smooth on iPhones/iPads */
 }
