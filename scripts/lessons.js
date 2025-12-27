@@ -77,19 +77,16 @@ function main() {
             }
         };
     }
+    
     let hoverableCodes = document.getElementsByClassName("hoverable-code");
     console.log(hoverableCodes);
     for (let i = 0; i < hoverableCodes.length; i++) {
-        hoverableCodes[i].style.minWidth = String(hoverableCodes[i].clientWidth) + 'px';
-        hoverableCodes[i].style.minHeight = String(hoverableCodes[i].clientHeight) + 'px';
+        hoverableCodes[i].style.minWidth = String(hoverableCodes[i].clientWidth - 10) + 'px';
+        hoverableCodes[i].style.minHeight = String(hoverableCodes[i].clientHeight - 10) + 'px';
     }
-}
 
-
-
-function table() {
-    let arr = Array.from(document.getElementsByTagName("table"));
-    arr.forEach((val, i, a) => {
+    let tables = Array.from(document.getElementsByTagName("table"));
+    tables.forEach((val, i, a) => {
         val.firstElementChild.firstElementChild.firstElementChild.style.borderTopLeftRadius = "10px";
         val.firstElementChild.firstElementChild.lastElementChild.style.borderTopRightRadius = "10px";
         val.firstElementChild.lastElementChild.firstElementChild.style.borderBottomLeftRadius = "10px";
