@@ -9,6 +9,8 @@
     --tri-color: #f0f0f0;
 
     --complete-button-color: #2ecc71;
+    --pure: #ffffff;
+    --pure-inverted: #000000;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -22,6 +24,8 @@
         --section-color: #1f1f1f;
         --tri-color: #232323;
         --complete-button-color: #27a85c;
+        --pure: #000000;
+        --pure-inverted: #ffffff;
     }
 }
 
@@ -148,4 +152,24 @@ pre {
 .hoverable-code {
     cursor: pointer;
     color: var(--primary-color);
+    border-radius: 5px;
+    border: 2px solid var(--primary-color);
+    display: inline-block;
+    padding: 5px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+.invis {
+    border-radius: 10px;
+    background-color: var(--pure);
+    color: var(--pure);
+    cursor: pointer;
+    padding: 10px;
+    display: inline-block;
+}
+.invis > * {
+    margin: 0;
+    user-select: none;
+    -webkit-user-select: none;
 }

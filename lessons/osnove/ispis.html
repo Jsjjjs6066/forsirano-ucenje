@@ -25,35 +25,35 @@
         <p>Ispisivanje je proces koji će tekst, brojke, simbole i druge informacije ispisati na ekranu.</p>
         <h2>Ispisivanje u Pythonu</h2>
         <p>U Pythonu ispisivanje se može izvesti koristeći funkciju <code class="language-python">print</code>.</p>
-        <pre><code class="language-python">print("Hello world!")</code></pre>
-        <p>Ispisuje "Hello world!" (bez navodnika)</p>
+        <pre><code class="language-python"><div class="hoverable-code" onmouseover="this.innerText = 'Ispisuje Hello world!'" onmouseleave="this.innerText = 'print(&quot;Hello world!&quot;)'">print("Hello world!")</div></code></pre>
+        <br>
 
-        <pre><code class="language-python">print("Hello", "netko!")</code></pre>
         <p>U <code class="language-python">print</code> funkciji kada odvojimo nešto zarezom, dodat će razmak između.
         </p>
-
-        <pre><code class="language-python">print("\nHello!")</code></pre>
-        <p>"<code class="language-python">\n</code>" ide u sljedeći red.</p>
-
-        <p><code class="language-python">print</code> funkcija će automatski staviti taj znak nakon svakog ispisa.</p>
-        <p>Možemo staviti na kraju funkcije tako da ode dva reda ispod umjesto jednog.</p>
-        <p>Što će se dogoditi ako "<code class="language-python">\n</code>" stavimo dva puta?</p>
-
+        <pre><code class="language-python"><div class="hoverable-code" onmouseover="this.innerText = 'Ispisuje Hello netko!'" onmouseleave="this.innerText = 'print(&quot;Hello&quot;, &quot;netko!&quot;)'">print("Hello", "netko!")</div></code></pre>
+        <h2><code class="language-python">"\n"</code> u ispisivanju</h2>
+        <p>Možemo koristiti <code class="language-python">\n</code> kako bismo stavili novi red.</p>
+        <pre><code class="language-python"><div class="hoverable-code" onmouseover="this.innerHTML = '&quot;<code class=`language-python`>\\n</code>&quot; ide u sljedeći red.\nIspis:\nHello!\n\nHello!'" onmouseleave="this.innerText = 'print(&quot;Hello!&quot;)\nprint(&quot;\\nHello!&quot;)'">print("Hello!")
+print("\nHello!")</div></code></pre>
+        <p><code class="language-python">print</code> funkcija će automatski staviti taj znak nakon svakog ispisa kako bi išao u novi red. Možemo staviti na kraju funkcije tako da ode dva reda ispod umjesto jednog.</p>
+        <p>Što će se dogoditi ako "<code class="language-python">\n</code>" stavimo dva puta na kraju funkcije? Razmisli u glavi pa provjeri točnost odgovora klikom na crnu površinu ispod.</p>
+        <div class="invis">
+            <p>Otići će dva dodatna reda ispod.</p>
+        </div>
+        <h2><code class="language-python">end</code> argument</h2>
         <p>Ako ne želimo da završi s time možemo promjeniti <code class="language-python">end</code> argument u
             funkciji.</p>
-        <pre><code class="language-python">print("Hello", end=" ")</code></pre>
-        <p>Završava s " " umjesto "<code class="language-python">\n</code>".</p>
+        <pre><code class="language-python"><hoverable-code id="test-hoverable-code" enter="Završava s &lt;code class='language-python'&gt;&quot; &quot;&lt;/code&gt; umjesto &quot;&lt;code class='language-python'&gt;\n&lt;/code&gt;&quot;.">print("Hello", end=" ")
+print("world!\n")</hoverable-code></code></pre>
 
-        <pre><code class="language-python">print("world!\n")</code></pre>
-        <p>Provjeri radi li.</p>
-
-        <p><code class="language-python">end</code> argument može i biti prazan string ("").</p>
-        <pre><code class="language-python">print("H", end="")
-print("I")</code></pre>
+        <p><code class="language-python">end</code> argument može biti i prazan string ("").</p>
+        <pre><code class="language-python"><hoverable-code enter="&lt;code class='language-python'&gt;end&lt;/code&gt; argument može biti i prazan string (&quot;&quot;). &lt;br&gt;Ispis: &lt;br&gt;HI">print("H", end="")
+print("I")</hoverable-code></code></pre>
         <button class="complete-button" onclick="completeLesson('ispis')">
             Završi!
         </button>
     </div>
+    <script defer>main();</script>
 </body>
 
 </html>
