@@ -216,3 +216,8 @@ table {
     overflow-x: auto;      /* Adds a scrollbar ONLY when content overflows */
     -webkit-overflow-scrolling: touch; /* Makes scrolling smooth on iPhones/iPads */
 }
+
+code {
+    display: inline-block;
+    width: max-content;
+}

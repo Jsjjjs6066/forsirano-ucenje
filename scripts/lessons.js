@@ -89,7 +89,7 @@ function main() {
     tables.forEach((val, i, a) => {
         val.firstElementChild.firstElementChild.firstElementChild.style.borderTopLeftRadius = "10px";
         val.firstElementChild.firstElementChild.lastElementChild.style.borderTopRightRadius = "10px";
-        val.firstElementChild.lastElementChild.firstElementChild.style.borderBottomLeftRadius = "10px";
-        val.firstElementChild.lastElementChild.lastElementChild.style.borderBottomRightRadius = "10px";
+        val.lastElementChild.lastElementChild.firstElementChild.style.borderBottomLeftRadius = "10px";
+        val.lastElementChild.lastElementChild.lastElementChild.style.borderBottomRightRadius = "10px";
     });
 }

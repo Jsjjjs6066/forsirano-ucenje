@@ -24,22 +24,24 @@
         <h2>Osnovna aritmetika</h2>
         <div class="table-cont">
             <table>
-                <tbody>
+                <thead>
                     <tr>
                         <th>Operacija</th>
                         <th>Znak u matematici</th>
-                        <th>Znak u programiranju</th>
+                        <th>Znak u Pythonu</th>
                         <th>Primjer u matematici</th>
-                        <th>Primjer u programiranju</th>
+                        <th>Primjer u Pythonu</th>
                     </tr>
+                </thead>
+                <tbody>
                     <tr>
-                        <td>Zbrajanje</td>
+                        <th>Zbrajanje</th>
                         <td><math>
                                 <mrow>
                                     <mo>+</mo>
                                 </mrow>
                             </math></td>
-                        <td>+</td>
+                        <td><code class="language-python">+</code></td>
                         <td><math>
                                 <mrow>
                                     <mn>11</mn>
@@ -49,16 +51,16 @@
                                     <mn>14</mn>
                                 </mrow>
                             </math></td>
-                        <td>print(11 + 3)</td>
+                        <td><code class="language-python">print(11 + 3)</code></td>
                     </tr>
                     <tr>
-                        <td>Oduzimanje</td>
+                        <th>Oduzimanje</th>
                         <td><math>
                                 <mrow>
                                     <mo>-</mo>
                                 </mrow>
                             </math></td>
-                        <td>-</td>
+                        <td><code class="language-python">-</code></td>
                         <td><math>
                                 <mrow>
                                     <mn>11</mn>
@@ -68,16 +70,16 @@
                                     <mn>8</mn>
                                 </mrow>
                             </math></td>
-                        <td>print(11 - 3)</td>
+                        <td><code class="language-python">print(11 - 3)</code></td>
                     </tr>
                     <tr>
-                        <td>Množenje</td>
+                        <th>Množenje</th>
                         <td><math>
                                 <mrow>
                                     <mo>×</mo>
                                     </mo>
                             </math></td>
-                        <td>*</td>
+                        <td><code class="language-python">*</code></td>
                         <td><math>
                                 <mrow>
                                     <mn>11</mn>
@@ -87,16 +89,35 @@
                                     <mn>33</mn>
                                 </mrow>
                             </math></td>
-                        <td>print(11 * 3)</td>
+                        <td><code class="language-python">print(11 * 3)</code></td>
                     </tr>
                     <tr>
-                        <td>Dijeljenje</td>
+                        <th>Potencija</th>
+                        <td><math>
+                                <mrow>
+                                    <mo>^</mo>
+                                </mrow>
+                            </math></td>
+                        <td><code class="language-python">**</code></td>
+                        <td><math>
+                                <mrow>
+                                    <mn>11</mn>
+                                    <mo>^</mo>
+                                    <mn>3</mn>
+                                    <mo>=</mo>
+                                    <mn>1331</mn>
+                                </mrow>
+                            </math></td>
+                        <td><code class="language-python">print(11 ** 3)</code></td>
+                    </tr>
+                    <tr>
+                        <th>Dijeljenje</th>
                         <td><math>
                                 <mrow>
                                     <mo>÷</mo>
                                     </mo>
                             </math></td>
-                        <td>/</td>
+                        <td><code class="language-python">/</code></td>
                         <td><math>
                                 <mrow>
                                     <mn>11</mn>
@@ -106,16 +127,16 @@
                                     <mn>3.66 ...</mn>
                                 </mrow>
                             </math></td>
-                        <td>print(11 / 3)</td>
+                        <td><code class="language-python">print(11 / 3)</code></td>
                     </tr>
                     <tr>
-                        <td>Dijeljenje na cijeli broj</td>
+                        <th>Dijeljenje na cijeli broj</th>
                         <td><math>
                                 <mrow>
                                     <mo>div</mo>
                                 </mrow>
                             </math></td>
-                        <td>//</td>
+                        <td><code class="language-python">//</code></td>
                         <td><math>
                                 <mrow>
                                     <mn>11</mn>
@@ -125,16 +146,16 @@
                                     <mn>3</mn>
                                 </mrow>
                             </math></td>
-                        <td>print(11 // 3)</td>
+                        <td><code class="language-python">print(11 // 3)</code></td>
                     </tr>
                     <tr>
-                        <td>Ostatak pri dijeljenju</td>
+                        <th>Ostatak pri dijeljenju</th>
                         <td><math>
                                 <mrow>
                                     <mo>mod</mo>
                                     </mo>
                             </math></td>
-                        <td>%</td>
+                        <td><code class="language-python">%</code></td>
                         <td><math>
                                 <mrow>
                                     <mn>11</mn>
@@ -144,20 +165,95 @@
                                     <mn>2</mn>
                                 </mrow>
                             </math></td>
-                        <td>print(11 % 3)</td>
+                        <td><code class="language-python">print(11 % 3)</code></td>
                     </tr>
                 </tbody>
             </table>
         </div>
         <h2>Primjeri aritmetičkih operatora</h2>
-        <pre><code class="language-python"><hoverable-code enter="Int">a = 11</hoverable-code>
-<hoverable-code enter="Int">b = 3</hoverable-code>
+        <pre><code class="language-python"><hoverable-code enter="Cijeli broj">a = 11</hoverable-code>
+<hoverable-code enter="Cijeli broj">b = 3</hoverable-code>
 <hoverable-code enter="Zbrajanje (14)">print(a + b)</hoverable-code>
 <hoverable-code enter="Oduzimanje (8)">print(a - b)</hoverable-code>
 <hoverable-code enter="Množenje (33)">print(a * b)</hoverable-code>
-<hoverable-code enter="Dijeljenje s decimalama (3.67 ...)">print(a / b)</hoverable-code>
-<hoverable-code enter="Dijeljenje na cijeli broj (3)">print(a // b)</hoverable-code>
-<hoverable-code enter="Ostatak pri dijeljenju (2)">print(a % b)</hoverable-code></code></pre>
+<hoverable-code enter="Potencija (1331)">print(a ** b)</hoverable-code>
+<hoverable-code enter="Dijeljenje s decimalama (float) (3.66 ...)">print(a / b)</hoverable-code>
+<hoverable-code enter="Dijeljenje na cijeli broj (cijeli broj) (3)">print(a // b)</hoverable-code>
+<hoverable-code enter="Ostatak pri dijeljenju (modulo) (2)">print(a % b)</hoverable-code></code></pre>
+        <h2>Mijenjanje vrijednosti varijable</h2>
+        <p>Za ovaj primjer imamo dvije varijable <code><hoverable-code enter="Cijeli broj">a = 11</hoverable-code></code> i <code><hoverable-code enter="Cijeli broj">b = 3</hoverable-code></code> koje su inicijalizirane vrijednostima 11 i 3.</p>
+        <div class="table-cont">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Operacija</th>
+                        <th>Objašnjenje</th>
+                        <th>Primjer</th>
+                        <th>Kraći primjer</th>
+                        <th>Rezultat <code class="language-python">a</code></th>
+                        <th>Rezultat <code class="language-python">b</code></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>Zbrajanje</th>
+                        <td>Na <code><hoverable-code enter="11">a</hoverable-code></code> se dodaje vrijednost <code><hoverable-code enter="3">b</hoverable-code></code></td>
+                        <td><code class="language-python">a = a + b</code></td>
+                        <td><code class="language-python">a += b</code></td>
+                        <td><code class="language-python">14</code></td>
+                        <td><code class="language-python">3</code></td>
+                    </tr>
+                    <tr>
+                        <th>Oduzimanje</th>
+                        <td>Na <code><hoverable-code enter="11">a</hoverable-code></code> se oduzima vrijednost <code><hoverable-code enter="3">b</hoverable-code></code></td>
+                        <td><code class="language-python">a = a - b</code></td>
+                        <td><code class="language-python">a -= b</code></td>
+                        <td><code class="language-python">8</code></td>
+                        <td><code class="language-python">3</code></td>
+                    </tr>
+                    <tr>
+                        <th>Množenje</th>
+                        <td>Na <code><hoverable-code enter="11">a</hoverable-code></code> se množi vrijednost <code><hoverable-code enter="3">b</hoverable-code></code></td>
+                        <td><code class="language-python">a = a * b</code></td>
+                        <td><code class="language-python">a *= b</code></td>
+                        <td><code class="language-python">33</code></td>
+                        <td><code class="language-python">3</code></td>
+                    </tr>
+                    <tr>
+                        <th>Potencija</th>
+                        <td>Na <code><hoverable-code enter="11">a</hoverable-code></code> se potencira vrijednost <code><hoverable-code enter="3">b</hoverable-code></code></td>
+                        <td><code class="language-python">a = a ** b</code></td>
+                        <td><code class="language-python">a **= b</code></td>
+                        <td><code class="language-python">1331</code></td>
+                        <td><code class="language-python">3</code></td>
+                    </tr>
+                    <tr>
+                        <th>Dijeljenje</th>
+                        <td>Na <code><hoverable-code enter="11">a</hoverable-code></code> se dijeli vrijednost <code><hoverable-code enter="3">b</hoverable-code></code></td>
+                        <td><code class="language-python">a = a / b</code></td>
+                        <td><code class="language-python">a /= b</code></td>
+                        <td><code class="language-python">3.66 ...</code></td>
+                        <td><code class="language-python">3</code></td>
+                    </tr>
+                    <tr>
+                        <th>Dijeljenje na cijeli broj</th>
+                        <td>Na <code><hoverable-code enter="11">a</hoverable-code></code> se dijeli vrijednost <code><hoverable-code enter="3">b</hoverable-code></code> na cijeli broj</td>
+                        <td><code class="language-python">a = a // b</code></td>
+                        <td><code class="language-python">a //= b</code></td>
+                        <td><code class="language-python">3</code></td>
+                        <td><code class="language-python">3</code></td>
+                    </tr>
+                    <tr>
+                        <th>Ostatak pri dijeljenju</th>
+                        <td>Na <code><hoverable-code enter="11">a</hoverable-code></code> se dijeli vrijednost <code><hoverable-code enter="3">b</hoverable-code></code> i ostatak se sprema u <code class="language-python">a</code></td>
+                        <td><code class="language-python">a = a % b</code></td>
+                        <td><code class="language-python">a %= b</code></td>
+                        <td><code class="language-python">2</code></td>
+                        <td><code class="language-python">3</code></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
         <button class="complete-button" onclick="completeLesson('operatori')">
             Završi!
         </button>
