@@ -179,6 +179,7 @@ pre {
     cursor: pointer;
     padding: 10px;
     display: inline-block;
+    -webkit-tap-highlight-color: transparent;
 }
 .invis > * {
     margin: 0;
@@ -220,4 +221,13 @@ table {
 code {
     display: inline-block;
     width: max-content;
+}
+
+pre {
+    overflow-x: auto;      /* Adds a scrollbar ONLY when content overflows */
+    -webkit-overflow-scrolling: touch; /* Makes scrolling smooth on iPhones/iPads */
+}
+
+.hoverable-code {
+    -webkit-tap-highlight-color: transparent;
 }
