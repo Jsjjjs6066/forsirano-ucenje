@@ -159,6 +159,7 @@ pre {
     font-size: 4em;
     font-weight: bold;
     -webkit-tap-highlight-color: transparent;
+    margin-top: 10px;
 }
 
 .complete-button:hover {
@@ -222,21 +223,21 @@ table {
 
 .table-cont {
     overflow-x: auto;
-    /* Adds a scrollbar ONLY when content overflows */
     -webkit-overflow-scrolling: touch;
-    /* Makes scrolling smooth on iPhones/iPads */
 }
 
 code {
     display: inline-block;
     width: max-content;
+    margin: 2px;
 }
 
 pre {
-    overflow-x: auto;
-    /* Adds a scrollbar ONLY when content overflows */
-    -webkit-overflow-scrolling: touch;
-    /* Makes scrolling smooth on iPhones/iPads */
+    /* overflow-x: auto;
+    -webkit-overflow-scrolling: touch; */
+    min-width: 100%;
+    padding: 0;
+    width: fit-content;
 }
 
 .hoverable-code {
@@ -247,6 +248,7 @@ pre {
     margin-left: 2px;
     display: block;
     margin-bottom: 5px;
+    width: max-content;
 }
 
 .explainer-cont>* {
@@ -270,3 +272,7 @@ pre {
 .explainer-cont>.margin {}
 
 
+.code-cont {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}

@@ -23,44 +23,51 @@
         <h1>String</h1>
         <h2>Definicija</h2>
         <p>String je tip koji se sadrži od znakova u određenom redoslijedu. Npr. "Bok!". String ima i svoju duljinu (broj znakova). U ovom primjeru string ima duljinu 4. Svaki znak ima svoj indeks koji objašnjava poziciju znaka u stringu. Indeksi počinju od 0 što znači da je prvi znak na indeksu 0, drugi na indeksu 1... Primjer indeksa za string "Bok!":</p>
-        <table>
-            <thead>
-                <tr>
-                    <th>Indeks</th>
-                    <th>Znak na tom indeksu</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>0</td>
-                    <td>B</td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>o</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>k</td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>!</td>
-                </tr>
-            </tbody>
-        </table>
+        <div class="table-cont">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Indeks</th>
+                        <th>Znak na tom indeksu</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>0</td>
+                        <td>B</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>o</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>k</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>!</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
         <h2>Varijabla</h2>
         <p>Koristit ćemo varijablu <code class="language-python">pozdrav</code> za primjere.</p>
+        <div class="code-cont">
         <pre><code class="language-python">pozdrav = "Bok!"</code></pre>
+        </div>
         <h2>Ispis</h2>
         <p>Možemo ispisati cijeli string koristeći se funkcijom <code class="language-python">print</code> koju smo već radili. Prisjeti se kako ispisati varijablu funkcijom <code class="language-python">print</code>.</p>
+        <div class="code-cont">
         <pre><code class="language-python"><hoverable-code enter='Ispisuje cijeli string ("Bok!")'>print(pozdrav)</hoverable-code></code></pre>
         <explainer-cont>
             <explainer-info hc-paddings="1" pos="6" size="7">String "Bok!"</explainer-info>
         </explainer-cont>
+        </div>
         <p>Ispisuje cijeli string ("Bok!")</p>
         <h2>Duljina</h2>
         <p>Funkcija <code class="language-python">len</code> prima string i vraća njegovu duljinu (broj znakova). Neće se ispisati dok ne koristimo funkciju <code class="language-python">print</code>.</p>
+        <div class="code-cont">
         <pre><code class="language-python"><hoverable-code enter='Ispisuje duljinu (4)'>print(len(pozdrav))</hoverable-code></code></pre>
         <explainer-cont>
             <explainer-info hc-paddings="1" pos="6" size="12">Funkcija len() vraća duljinu stringa (4)</explainer-info>
@@ -68,13 +75,17 @@
         <explainer-cont>
             <explainer-info hc-paddings="1" pos="10" size="7">String "Bok!"</explainer-info>
         </explainer-cont>
+        </div>
         <p>Možemo i staviti u varijablu.</p>
+        <div class="code-cont">
         <pre><code class="language-python"><hoverable-code enter='Stavlja duljinu stringa (4) u varijablu'>duljina = len(pozdrav)</hoverable-code></code></pre>
         <explainer-cont>
             <explainer-info hc-paddings="1" pos="10" size="12">Funkcija len() vraća int</explainer-info>
         </explainer-cont>
+        </div>
         <h2>Indeksi i dohvaćanje znakova</h2>
         <p>Indeksi počinju od 0 što znači da je prvi znak na indeksu 0, drugi na indeksu 1...</p>
+        <div class="code-cont">
         <pre><code class="language-python"><hoverable-code enter='Dohvaća znak na indeksu 0 (prvi znak u stringu)'>print(pozdrav[0])</hoverable-code></code></pre>
         <explainer-cont>
             <explainer-info hc-paddings="1" pos="6" size="10">Znak na indeksu 0 (B)</explainer-info>
@@ -83,7 +94,9 @@
             <explainer-info hc-paddings="1" pos="6" size="7">String "Bok!"</explainer-info>
             <explainer-info pos="14" size="1">Indeks (int)</explainer-info>
         </explainer-cont>
+        </div>
         <p>Možemo i dohvaćati zadnji znak stringa logikom koristeći se indeksom <code class="language-python">len(string) - 1</code>. Pošto indeksi počinju od 0, a duljina stringa je 18, zadnji indeks je 17. To vrijedi za sve stringove.</p>
+        <div class="code-cont">
         <pre><code class="language-python"><hoverable-code enter='Dohvaća zadnji znak stringa logičkim razmišljanjem (!)'>print(pozdrav[len(pozdrav) - 1])</hoverable-code></code></pre>
         <explainer-cont>
             <explainer-info hc-paddings="1" pos="6" size="25">Znak na indeksu 17 (!)</explainer-info>
@@ -95,7 +108,9 @@
         <explainer-cont>
             <explainer-info hc-paddings="1" pos="18" size="7">Znak na indeksu 17 (!)</explainer-info>
         </explainer-cont>
+        </div>
         <p>Možemo i dohvatiti zadnji znak stringa na lakši način koristeći se indeksom <code class="language-python">-1</code>.</p>
+        <div class="code-cont">
         <pre><code class="language-python"><hoverable-code enter='Dohvaća zadnji znak stringa na lakši način koristeći se indeksom -1'>print(pozdrav[-1])</hoverable-code></code></pre>
         <explainer-cont>
             <explainer-info hc-paddings="1" pos="6" size="11">Znak na indeksu -1 (!)</explainer-info>
@@ -104,7 +119,9 @@
             <explainer-info hc-paddings="1" pos="6" size="7">String "Bok!"</explainer-info>
             <explainer-info pos="14" size="2">Indeks (int)</explainer-info>
         </explainer-cont>
+        </div>
         <p>Možemo dobiti error koji nam posve završava program ako pokušamo pristupiti znaku koji ne postoji.</p>
+        <div class="code-cont">
         <pre><code class="language-python"><hoverable-code color="red" enter='Daje error'>print(pozdrav[len(pozdrav)])</hoverable-code></code></pre>
         <explainer-cont>
             <explainer-info hc-paddings="1" pos="6" size="21">Daje error jer znak na tom indeksu ne postoji znak</explainer-info>
@@ -116,6 +133,7 @@
         <explainer-cont>
             <explainer-info hc-paddings="1" pos="18" size="7">string "Bok!"</explainer-info>
         </explainer-cont>
+        </div>
         <button class="complete-button" onclick="completeLesson('string')">
             Završi!
         </button>
