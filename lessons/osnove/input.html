@@ -11,6 +11,8 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism-dark.min.css" rel="stylesheet"
         media="(prefers-color-scheme: dark)" />
     <script src="../../scripts/lessons.js"></script>
+    <link rel="shortcut icon" href="/forsirano_ucenje.png" type="image/x-icon">
+    <link rel="icon" href="/forsirano_ucenje.png" type="image/x-icon">
 </head>
 
 <body>
@@ -22,52 +24,52 @@
     <div id="main">
         <h1>Input</h1>
         <div class="code-cont">
-        <pre><code class="language-python">""" s = input() """</code></pre>
+            <pre><code class="language-python">""" s = input() """</code></pre>
         </div>
         <p> vraća string</p>
         <div class="code-cont">
-        <pre><code class="language-python">""" print(s + 1) """</code></pre>
+            <pre><code class="language-python">""" print(s + 1) """</code></pre>
         </div>
         <p> Daje error (zbrajanje stringa i inta)</p>
-        <p style="white-space: pre-wrap; font-family: monospace;">  int
-  |
-  ------------
-  |          |
-  |   string |
-  |   |      |
-  |   -------|
-  |   |     ||</p>
+        <p style="white-space: pre-wrap; font-family: monospace;"> int
+            |
+            ------------
+            | |
+            | string |
+            | | |
+            | -------|
+            | | ||</p>
         <div class="code-cont">
-        <pre><code class="language-python">n = int(input())</code></pre>
+            <pre><code class="language-python">n = int(input())</code></pre>
         </div>
-        <p style="white-space: pre-wrap; font-family: monospace;">   |   |
-   |   -- Uzima unos, vraća string
-   -- Pretvara neki tip koji se nalazi u zagradama (u ovom slučaju string) u int</p>
-        <p style="white-space: pre-wrap; font-family: monospace;">    int
-    |
-    -----
-    |   |</p>
+        <p style="white-space: pre-wrap; font-family: monospace;"> | |
+            | -- Uzima unos, vraća string
+            -- Pretvara neki tip koji se nalazi u zagradama (u ovom slučaju string) u int</p>
+        <p style="white-space: pre-wrap; font-family: monospace;"> int
+            |
+            -----
+            | |</p>
         <div class="code-cont">
-        <pre><code class="language-python">print(n + 1)</code></pre>
+            <pre><code class="language-python">print(n + 1)</code></pre>
         </div>
         <p style="white-space: pre-wrap; font-family: monospace;"> Dobro (zbrajanje inta i inta)
-    |   |
-    ------ Intovi</p>
-        <p style="white-space: pre-wrap; font-family: monospace;">    string   string    string
-    |        |              |
-    ------   ---   ----------
-    |    |   | |   |        |</p>
+            | |
+            ------ Intovi</p>
+        <p style="white-space: pre-wrap; font-family: monospace;"> string string string
+            | | |
+            ------ --- ----------
+            | | | | | |</p>
         <div class="code-cont">
-        <pre><code class="language-python">print(str(n) + " " + str(n + 1))</code></pre>
+            <pre><code class="language-python">print(str(n) + " " + str(n + 1))</code></pre>
         </div>
         <p style="white-space: pre-wrap; font-family: monospace;"> Ispisuje n pa razmak pa n+1
-     |  |  |     |  |  |   |
-     |  |  |     |  |  ------ Zbrojimo int iz varijable "n" i int "1"
-     |  |  |     |  -- Pretvaramo neki tip koji se nalazi u zagradama (u ovom slučaju int) u string
-     |  |  |     -- Prijašnje dobivenom stringu dodajemo string s desna
-     |  |  --Prijašnje dobivenom stringu dadajemo string s desna (u ovom slučaju " ")
-     |  -- Int iz varijable "n"
-     -- Pretvaramo neki tip koji se nalazi u zagradama (u ovom slučaju int) u string</p>
+            | | | | | | |
+            | | | | | ------ Zbrojimo int iz varijable "n" i int "1"
+            | | | | -- Pretvaramo neki tip koji se nalazi u zagradama (u ovom slučaju int) u string
+            | | | -- Prijašnje dobivenom stringu dodajemo string s desna
+            | | --Prijašnje dobivenom stringu dadajemo string s desna (u ovom slučaju " ")
+            | -- Int iz varijable "n"
+            -- Pretvaramo neki tip koji se nalazi u zagradama (u ovom slučaju int) u string</p>
         <button class="complete-button" onclick="completeLesson('input')">
             Završi!
         </button>

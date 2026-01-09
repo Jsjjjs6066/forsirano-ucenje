@@ -11,6 +11,8 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism-dark.min.css" rel="stylesheet"
         media="(prefers-color-scheme: dark)" />
     <script src="../../scripts/lessons.js"></script>
+    <link rel="shortcut icon" href="/forsirano_ucenje.png" type="image/x-icon">
+    <link rel="icon" href="/forsirano_ucenje.png" type="image/x-icon">
 </head>
 
 <body>
@@ -26,23 +28,25 @@
         <h2>Ispisivanje u Pythonu</h2>
         <p>U Pythonu ispisivanje se može izvesti koristeći funkciju <code class="language-python">print</code>.</p>
         <div class="code-cont">
-        <pre><code class="language-python"><div class="hoverable-code" onmouseover="this.innerText = 'Ispisuje Hello world!'" onmouseleave="this.innerText = 'print(&quot;Hello world!&quot;)'">print("Hello world!")</div></code></pre>
+            <pre><code class="language-python"><div class="hoverable-code" onmouseover="this.innerText = 'Ispisuje Hello world!'" onmouseleave="this.innerText = 'print(&quot;Hello world!&quot;)'">print("Hello world!")</div></code></pre>
         </div>
         <br>
 
         <p>U <code class="language-python">print</code> funkciji kada odvojimo nešto zarezom, dodat će razmak između.
         </p>
         <div class="code-cont">
-        <pre><code class="language-python"><div class="hoverable-code" onmouseover="this.innerText = 'Ispisuje Hello netko!'" onmouseleave="this.innerText = 'print(&quot;Hello&quot;, &quot;netko!&quot;)'">print("Hello", "netko!")</div></code></pre>
+            <pre><code class="language-python"><div class="hoverable-code" onmouseover="this.innerText = 'Ispisuje Hello netko!'" onmouseleave="this.innerText = 'print(&quot;Hello&quot;, &quot;netko!&quot;)'">print("Hello", "netko!")</div></code></pre>
         </div>
         <h2><code class="language-python">"\n"</code> u ispisivanju</h2>
         <p>Možemo koristiti <code class="language-python">\n</code> kako bismo stavili novi red.</p>
         <div class="code-cont">
-        <pre><code class="language-python"><div class="hoverable-code" onmouseover="this.innerHTML = '&quot;<code class=`language-python`>\\n</code>&quot; ide u sljedeći red.\nIspis:\nHello!\n\nHello!'" onmouseleave="this.innerText = 'print(&quot;Hello!&quot;)\nprint(&quot;\\nHello!&quot;)'">print("Hello!")
+            <pre><code class="language-python"><div class="hoverable-code" onmouseover="this.innerHTML = '&quot;<code class=`language-python`>\\n</code>&quot; ide u sljedeći red.\nIspis:\nHello!\n\nHello!'" onmouseleave="this.innerText = 'print(&quot;Hello!&quot;)\nprint(&quot;\\nHello!&quot;)'">print("Hello!")
 print("\nHello!")</div></code></pre>
         </div>
-        <p><code class="language-python">print</code> funkcija će automatski staviti taj znak nakon svakog ispisa kako bi išao u novi red. Možemo staviti na kraju funkcije tako da ode dva reda ispod umjesto jednog.</p>
-        <p>Što će se dogoditi ako "<code class="language-python">\n</code>" stavimo dva puta na kraju funkcije? Razmisli u glavi pa provjeri točnost odgovora klikom na crnu površinu ispod.</p>
+        <p><code class="language-python">print</code> funkcija će automatski staviti taj znak nakon svakog ispisa kako
+            bi išao u novi red. Možemo staviti na kraju funkcije tako da ode dva reda ispod umjesto jednog.</p>
+        <p>Što će se dogoditi ako "<code class="language-python">\n</code>" stavimo dva puta na kraju funkcije? Razmisli
+            u glavi pa provjeri točnost odgovora klikom na crnu površinu ispod.</p>
         <div class="invis">
             <p>Otići će dva dodatna reda ispod.</p>
         </div>
@@ -50,13 +54,13 @@ print("\nHello!")</div></code></pre>
         <p>Ako ne želimo da završi s time možemo promjeniti <code class="language-python">end</code> argument u
             funkciji.</p>
         <div class="code-cont">
-        <pre><code class="language-python"><hoverable-code id="test-hoverable-code" enter="Završava s &lt;code class='language-python'&gt;&quot; &quot;&lt;/code&gt; umjesto &quot;&lt;code class='language-python'&gt;\n&lt;/code&gt;&quot;.">print("Hello", end=" ")
+            <pre><code class="language-python"><hoverable-code id="test-hoverable-code" enter="Završava s &lt;code class='language-python'&gt;&quot; &quot;&lt;/code&gt; umjesto &quot;&lt;code class='language-python'&gt;\n&lt;/code&gt;&quot;.">print("Hello", end=" ")
 print("world!\n")</hoverable-code></code></pre>
         </div>
 
         <p><code class="language-python">end</code> argument može biti i prazan string ("").</p>
         <div class="code-cont">
-        <pre><code class="language-python"><hoverable-code enter="&lt;code class='language-python'&gt;end&lt;/code&gt; argument može biti i prazan string (&quot;&quot;). &lt;br&gt;Ispis: &lt;br&gt;HI">print("H", end="")
+            <pre><code class="language-python"><hoverable-code enter="&lt;code class='language-python'&gt;end&lt;/code&gt; argument može biti i prazan string (&quot;&quot;). &lt;br&gt;Ispis: &lt;br&gt;HI">print("H", end="")
 print("I")</hoverable-code></code></pre>
         </div>
         <button class="complete-button" onclick="completeLesson('ispis')">

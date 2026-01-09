@@ -3,29 +3,23 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-        content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Varijable - Forsirano učenje
     </title>
-    <link rel="stylesheet"
-        href="../../style.css">
-    <link
-        href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism.min.css"
-        rel="stylesheet"
+    <link rel="stylesheet" href="../../style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism.min.css" rel="stylesheet"
         id="theme-style" />
-    <link
-        href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism-dark.min.css"
-        rel="stylesheet"
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism-dark.min.css" rel="stylesheet"
         media="(prefers-color-scheme: dark)" />
-    <script
-        src="../../scripts/lessons.js"></script>
+    <script src="../../scripts/lessons.js"></script>
+    <link rel="shortcut icon" href="/forsirano_ucenje.png" type="image/x-icon">
+    <link rel="icon" href="/forsirano_ucenje.png" type="image/x-icon">
 </head>
 
 <body>
     <header>
         <div id="nav">
-            <h1><a href="../../index.html"
-                    class="nav-link">Uvod</a>
+            <h1><a href="../../index.html" class="nav-link">Uvod</a>
                 / Osnove / Varijable
             </h1>
         </div>
@@ -40,44 +34,43 @@
             jednakost ( = ) i
             vrijednost. Na primjer:</p>
         <div class="code-cont">
-        <pre><code class="language-python"><hoverable-code enter="Ime varijable je &lt;code class='language-python'&gt;x&lt;/code&gt; a vrijednost 0">x = 0</hoverable-code></code></pre>
+            <pre><code class="language-python"><hoverable-code enter="Ime varijable je &lt;code class='language-python'&gt;x&lt;/code&gt; a vrijednost 0">x = 0</hoverable-code></code></pre>
         </div>
         <h2>Tipovi varijabli</h2>
         <p>Varijable mogu imati
             različite tipove
             vrijednosti koji kažu kako pohraniti podatke. Najosnovniji su:</p>
         <div class="code-cont">
-        <pre><code class="language-python"><hoverable-code enter="Cijeli broj (int), &lt;br&gt;mogu biti pozitivni, &lt;br&gt;nula i negativni.">a = 1
+            <pre><code class="language-python"><hoverable-code enter="Cijeli broj (int), &lt;br&gt;mogu biti pozitivni, &lt;br&gt;nula i negativni.">a = 1
 b = 0
 c = -1</hoverable-code></code></pre>
         </div>
         <div class="code-cont">
-        <pre><code class="language-python"><hoverable-code enter="Decimalni broj (float), &lt;br&gt;int ali s decimalama &lt;br&gt;(i dalje mogu biti cijeli brojevi).">a = 1.2
+            <pre><code class="language-python"><hoverable-code enter="Decimalni broj (float), &lt;br&gt;int ali s decimalama &lt;br&gt;(i dalje mogu biti cijeli brojevi).">a = 1.2
 b = -1.2
 c = 2.0</hoverable-code></code></pre>
         </div>
         <div class="code-cont">
-        <pre><code class="language-python"><hoverable-code enter="Skupina znakova (svaki znak može biti broj, slovo, &quot;.&quot;...) (string)">a = "abc"</hoverable-code></code></pre>
+            <pre><code class="language-python"><hoverable-code enter="Skupina znakova (svaki znak može biti broj, slovo, &quot;.&quot;...) (string)">a = "abc"</hoverable-code></code></pre>
         </div>
         <div class="code-cont">
-        <pre><code class="language-python"><hoverable-code enter="Točno (True) ili &lt;br&gt;netočno (False) (boolean)">a = True
+            <pre><code class="language-python"><hoverable-code enter="Točno (True) ili &lt;br&gt;netočno (False) (boolean)">a = True
 b = False</hoverable-code></code></pre>
         </div>
         <h2>Ispis vrijednosti varijabli</h2>
         <p>Možemo ispisati vrijednosti
             varijabli tako što napišemo
-            ime varijable u <code
-                class="language-python">print</code>
+            ime varijable u <code class="language-python">print</code>
             funkciju bez navodnika:</p>
         <div class="code-cont">
-        <pre><code class="language-python"><hoverable-code enter="Ispisuje vrijednost varijable &lt;code class='language-python'&gt;a&lt;/code&gt; (10)">a = 10
+            <pre><code class="language-python"><hoverable-code enter="Ispisuje vrijednost varijable &lt;code class='language-python'&gt;a&lt;/code&gt; (10)">a = 10
 print(a)</hoverable-code></code></pre>
         </div>
         <p>Na ovaj način možemo ispisati
             kombinaciju stringa
             i vrijednosti varijable:</p>
         <div class="code-cont">
-        <pre><code class="language-python">a = 10
+            <pre><code class="language-python">a = 10
 b = 20
 c = 30
 d = 40
@@ -86,21 +79,18 @@ d = 40
 <hoverable-code enter="Ispisuje „Vrijednost varijable c: 30“">print("Vrijednost varijable c:", c)</hoverable-code>
 <hoverable-code enter="Ispisuje „Vrijednost varijable d: 40“">print("Vrijednost varijable d:", d)</hoverable-code></code></pre>
         </div>
-            <p>Stavimo <code
-                class="language-python">f</code>
+        <p>Stavimo <code class="language-python">f</code>
             prije navodnika kako bismo
             napravili f-string.
             Tamo gdje stavimo vitičaste
-            zagrade <code
-                class="language-python">{</code>
-            i <code
-                class="language-python">}</code>
+            zagrade <code class="language-python">{</code>
+            i <code class="language-python">}</code>
             stavit će vrijednost
             varijable
             čije smo ime stavili. To je lakši način za ispisivanje s
             varijablama:</p>
         <div class="code-cont">
-        <pre><code class="language-python"><hoverable-code enter="Ispisuje „Vrijednost varijable a je 10!“">print(f"Vrijednost varijable a je {a}!")</hoverable-code>
+            <pre><code class="language-python"><hoverable-code enter="Ispisuje „Vrijednost varijable a je 10!“">print(f"Vrijednost varijable a je {a}!")</hoverable-code>
 <hoverable-code enter="Ispisuje „Vrijednost varijable b je 20!“">print(f"Vrijednost varijable b je {b}!")</hoverable-code>
 <hoverable-code enter="Ispisuje „Vrijednost varijable c je 30!“">print(f"Vrijednost varijable c je {c}!")</hoverable-code>
 <hoverable-code enter="Ispisuje „Vrijednost varijable d je 40!“">print(f"Vrijednost varijable d je {d}!")</hoverable-code></code></pre>
@@ -109,13 +99,12 @@ d = 40
         <p>Možemo i promjeniti
             vrijednost varijable:</p>
         <div class="code-cont">
-        <pre><code class="language-python">a = 10
+            <pre><code class="language-python">a = 10
 <hoverable-code enter="Ispisuje 10">print(a)</hoverable-code>
 a = 20
 <hoverable-code enter="Ispisuje 20">print(a)</hoverable-code></code></pre>
         </div>
-        <button class="complete-button"
-            onclick="completeLesson('varijable')">
+        <button class="complete-button" onclick="completeLesson('varijable')">
             Završi!
         </button>
     </div>
