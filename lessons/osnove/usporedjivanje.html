@@ -23,175 +23,145 @@
     </header>
     <div id="main">
         <h1>Uspoređivanje</h1>
+        <h2>Uspoređivanje brojeva</h2>
+        <p>Definirajmo neke varijable s brojevima:</p>
         <div class="code-cont">
-            <pre><code class="language-python">a = 30 </code></pre>
+            <pre><code class="language-python"><hoverable-code enter="Intovi">a = 30
+b = 30
+c = 20</hoverable-code></code></pre>
         </div>
-        <p> Int</p>
         <div class="code-cont">
-            <pre><code class="language-python">b = 30 </code></pre>
+            <pre><code class="language-python">print(<hoverable-code enter=" Je li a (30) jednako b (30)">a == b</hoverable-code>) </code></pre>
+            <explainer-cont>
+                <explainer-info hc-paddings="1" pos="6" size="6">Boolean (True)</explainer-info>
+            </explainer-cont>
         </div>
-        <p> Int</p>
         <div class="code-cont">
-            <pre><code class="language-python">c = 20 </code></pre>
+            <pre><code class="language-python">print(<hoverable-code enter=" Je li a (30) jednako c (20)">a == c</hoverable-code>) </code></pre>
+            <explainer-cont>
+                <explainer-info hc-paddings="1" pos="6" size="6">Boolean (False)</explainer-info>
+            </explainer-cont>
         </div>
-        <p> Int</p>
-        <p style="white-space: pre-wrap; font-family: monospace;"> boolean
-            |
-            ------
-            | |</p>
         <div class="code-cont">
-            <pre><code class="language-python">print(a == b) </code></pre>
+            <pre><code class="language-python">print(<hoverable-code enter=" Je li a (30) nejednako b (30)">a != b</hoverable-code>) </code></pre>
+            <explainer-cont>
+                <explainer-info hc-paddings="1" pos="6" size="6">Boolean (False)</explainer-info>
+            </explainer-cont>
         </div>
-        <p> Je li a (30) jedanko b (30)</p>
-        <p style="white-space: pre-wrap; font-family: monospace;"> boolean
-            |
-            ------
-            | |</p>
         <div class="code-cont">
-            <pre><code class="language-python">print(a == c) </code></pre>
+            <pre><code class="language-python">print(<hoverable-code enter=" Je li a (30) nejednako c (20)">a != c</hoverable-code>) </code></pre>
+            <explainer-cont>
+                <explainer-info hc-paddings="1" pos="6" size="6">Boolean (True)</explainer-info>
+            </explainer-cont>
         </div>
-        <p> Je li a (30) jedanko c (20)</p>
-        <p style="white-space: pre-wrap; font-family: monospace;"> boolean
-            |
-            ------
-            | |</p>
         <div class="code-cont">
-            <pre><code class="language-python">print(a != b) </code></pre>
+            <pre><code class="language-python">print(<hoverable-code enter=" Je li a (30) manje od b (30)">a &lt; b</hoverable-code>) </code></pre>
+            <explainer-cont>
+                <explainer-info hc-paddings="1" pos="6" size="5">Boolean (False)</explainer-info>
+            </explainer-cont>
         </div>
-        <p> Je li a (30) nejedanko b (30)</p>
-        <p style="white-space: pre-wrap; font-family: monospace;"> boolean
-            |
-            ------
-            | |</p>
         <div class="code-cont">
-            <pre><code class="language-python">print(a != c) </code></pre>
+            <pre><code class="language-python">print(<hoverable-code enter=" Je li a (30) manje od c (20)">a &lt; c</hoverable-code>) </code></pre>
+            <explainer-cont>
+                <explainer-info hc-paddings="1" pos="6" size="5">Boolean (False)</explainer-info>
+            </explainer-cont>
         </div>
-        <p> Je li a (30) nejedanko c (20)</p>
-        <p style="white-space: pre-wrap; font-family: monospace;"> boolean
-            |
-            ------
-            | |</p>
         <div class="code-cont">
-            <pre><code class="language-python">print(a &lt; b) </code></pre>
+            <pre><code class="language-python">print(<hoverable-code enter=" Je li a (30) veće od b (30)">a &gt; b</hoverable-code>) </code></pre>
+            <explainer-cont>
+                <explainer-info hc-paddings="1" pos="6" size="5">Boolean (False)</explainer-info>
+            </explainer-cont>
         </div>
-        <p> Je li a (30) manje od b (30)</p>
-        <p style="white-space: pre-wrap; font-family: monospace;"> boolean
-            |
-            ------
-            | |</p>
         <div class="code-cont">
-            <pre><code class="language-python">print(a &lt; c) </code></pre>
+            <pre><code class="language-python">print(<hoverable-code enter=" Je li a (30) veće od c (20)">a &gt; c</hoverable-code>) </code></pre>
+            <explainer-cont>
+                <explainer-info hc-paddings="1" pos="6" size="5">Boolean (True)</explainer-info>
+            </explainer-cont>
         </div>
-        <p> Je li a (30) manje od c (20)</p>
-        <p style="white-space: pre-wrap; font-family: monospace;"> boolean
-            |
-            ------
-            | |</p>
         <div class="code-cont">
-            <pre><code class="language-python">print(a &gt; b) </code></pre>
+            <pre><code class="language-python">print(<hoverable-code enter=" Je li a (30) manje ili jednako od b (30)">a &lt;= b</hoverable-code>) </code></pre>
+            <explainer-cont>
+                <explainer-info hc-paddings="1" pos="6" size="6">Boolean (True)</explainer-info>
+            </explainer-cont>
         </div>
-        <p> Je li a (30) veće od b (30)</p>
-        <p style="white-space: pre-wrap; font-family: monospace;"> boolean
-            |
-            ------
-            | |</p>
         <div class="code-cont">
-            <pre><code class="language-python">print(a &gt; c) </code></pre>
+            <pre><code class="language-python">print(<hoverable-code enter=" Je li a (30) manje ili jednako od c (20)">a &lt;= c</hoverable-code>) </code></pre>
+            <explainer-cont>
+                <explainer-info hc-paddings="1" pos="6" size="6">Boolean (False)</explainer-info>
+            </explainer-cont>
         </div>
-        <p> Je li a (30) veće od c (20)</p>
-        <p style="white-space: pre-wrap; font-family: monospace;"> boolean
-            |
-            ------
-            | |</p>
         <div class="code-cont">
-            <pre><code class="language-python">print(a &lt;= b) </code></pre>
+            <pre><code class="language-python">print(<hoverable-code enter=" Je li a (30) veće ili jednako od b (30)">a &gt;= b</hoverable-code>) </code></pre>
+            <explainer-cont>
+                <explainer-info hc-paddings="1" pos="6" size="6">Boolean (True)</explainer-info>
+            </explainer-cont>
         </div>
-        <p> Je li a (30) manje ili jedanko od b (30)</p>
-        <p style="white-space: pre-wrap; font-family: monospace;"> boolean
-            |
-            ------
-            | |</p>
         <div class="code-cont">
-            <pre><code class="language-python">print(a &lt;= c) </code></pre>
+            <pre><code class="language-python">print(<hoverable-code enter=" Je li a (30) veće ili jednako od c (20)">a &gt;= c</hoverable-code>) </code></pre>
+            <explainer-cont>
+                <explainer-info hc-paddings="1" pos="6" size="6">Boolean (True)</explainer-info>
+            </explainer-cont>
         </div>
-        <p> Je li a (30) manje ili jednako od c (20)</p>
-        <p style="white-space: pre-wrap; font-family: monospace;"> boolean
-            |
-            ------
-            | |</p>
+        <h2>Uspoređivanje stringova</h2>
+        <p>Definirajmo neke varijable sa stringovima:</p>
         <div class="code-cont">
-            <pre><code class="language-python">print(a &gt;= b) </code></pre>
+            <pre><code class="language-python"><hoverable-code enter="Stringovi">s1 = "nesto"
+s2 = "nesto"
+s3 = "nesto2"</hoverable-code></code></pre>
         </div>
-        <p> Je li a (30) veće ili jednako od b (30)</p>
-        <p style="white-space: pre-wrap; font-family: monospace;"> boolean
-            |
-            ------
-            | |</p>
         <div class="code-cont">
-            <pre><code class="language-python">print(a &gt;= c) </code></pre>
+            <pre><code class="language-python">print(<hoverable-code enter="Je li s1 (&quot;nesto&quot;) jednako s2 (&quot;nesto&quot;)">s1 == s2</hoverable-code>)</code></pre>
+            <explainer-cont>
+                <explainer-info hc-paddings="1" pos="6" size="8">Boolean (True)</explainer-info>
+            </explainer-cont>
         </div>
-        <p> Je li a (30) veće ili jednako od c (20)</p>
         <div class="code-cont">
-            <pre><code class="language-python">s1 = "nesto" </code></pre>
+            <pre><code class="language-python">print(<hoverable-code enter="Je li s1 (&quot;nesto&quot;) jednako s3 (&quot;nesto2&quot;)">s1 == s3</hoverable-code>) </code></pre>
+            <explainer-cont>
+                <explainer-info hc-paddings="1" pos="6" size="8">Boolean (False)</explainer-info>
+            </explainer-cont>
         </div>
-        <p> String</p>
         <div class="code-cont">
-            <pre><code class="language-python">s2 = "nesto" </code></pre>
+            <pre><code class="language-python">print(<hoverable-code enter="Je li s1 (&quot;nesto&quot;) nejednako s2 (&quot;nesto&quot;)">s1 != s2</hoverable-code>) </code></pre>
+            <explainer-cont>
+                <explainer-info hc-paddings="1" pos="6" size="8">Boolean (False)</explainer-info>
+            </explainer-cont>
         </div>
-        <p> String</p>
         <div class="code-cont">
-            <pre><code class="language-python">s3 = "nesto2" </code></pre>
+            <pre><code class="language-python">print(<hoverable-code enter="Je li s1 (&quot;nesto&quot;) nejednako s3 (&quot;nesto2&quot;)">s1 != s3</hoverable-code>) </code></pre>
+            <explainer-cont>
+                <explainer-info hc-paddings="1" pos="6" size="8">Boolean (True)</explainer-info>
+            </explainer-cont>
         </div>
-        <p> String</p>
-        <p style="white-space: pre-wrap; font-family: monospace;"> boolean
-            |
-            --------
-            | |</p>
+        <h2>Primjer</h2>
         <div class="code-cont">
-            <pre><code class="language-python">print(s1 == s2) </code></pre>
-        </div>
-        <p> Je li s1 ("nesto") jedanko s2 ("nesto")</p>
-        <p style="white-space: pre-wrap; font-family: monospace;"> boolean
-            |
-            --------
-            | |</p>
-        <div class="code-cont">
-            <pre><code class="language-python">print(s1 == s3) </code></pre>
-        </div>
-        <p> Je li s1 ("nesto") jedanko s3 ("nesto2")</p>
-        <p style="white-space: pre-wrap; font-family: monospace;"> boolean
-            |
-            --------
-            | |</p>
-        <div class="code-cont">
-            <pre><code class="language-python">print(s1 != s2) </code></pre>
-        </div>
-        <p> Je li s1 ("nesto") nejedanko s2 ("nesto")</p>
-        <p style="white-space: pre-wrap; font-family: monospace;"> boolean
-            |
-            --------
-            | |</p>
-        <div class="code-cont">
-            <pre><code class="language-python">print(s1 != s3) </code></pre>
-        </div>
-        <p> Je li s1 ("nesto") nejedanko s3 ("nesto2")</p>
-        <p>PRIMJER</p>
-        <div class="code-cont">
-            <pre><code class="language-python">godina = int(input())</code></pre>
-        </div>
-        <p style="white-space: pre-wrap; font-family: monospace;">Ako je godina manja od 0
-            boolean
-            |
-            ----------
-            | |</p>
-        <div class="code-cont">
-            <pre><code class="language-python">if (godina &lt; 0):
-    print("Nisi još rođen.")</code></pre>
-        </div>
-        <p>Inače ovo</p>
-        <div class="code-cont">
-            <pre><code class="language-python">else:
+            <pre><code class="language-python">godina = int(input())
+if (godina &lt; 0):
+    print("Nisi još rođen.")
+else:
     print("Rođen si.")</code></pre>
+        </div>
+        <p>Idemo analizirati kod liniju po liniju:</p>
+        <div class="code-cont">
+            <pre><code class="language-python">godina = <hoverable-code enter="Unos cijelog broja">int(input())</hoverable-code></code></pre>
+            <explainer-cont>
+                <explainer-info hc-paddings="1" pos="9" size="12">Int</explainer-info>
+            </explainer-cont>
+        </div>
+        <div class="code-cont">
+            <pre><code class="language-python"><hoverable-code enter="Ako je godina manja od 0 pokrene sve ispod dvotočke pod istom indentacijom">if (godina &lt; 0):</hoverable-code></code></pre>
+            <explainer-cont>
+                <explainer-info hc-paddings="1" pos="4" size="10">Boolean</explainer-info>
+            </explainer-cont>
+        </div>
+        <div class="code-cont">
+            <pre><code class="language-python"><hoverable-code enter="Pokrenuto poslije if-a">    print("Nisi još rođen.")</hoverable-code></code></pre>
+        </div>
+        <div class="code-cont">
+            <pre><code class="language-python"><hoverable-code enter="Ako nije ispunjen uvjet if-a pokreće sve ispod dvotočke pod istom indentacijom nakon else-a ako postoji">else:</hoverable-code></code></pre>
+        </div>
+        <div class="code-cont">
+            <pre><code class="language-python"><hoverable-code enter="Pokrenuto poslije else-a">    print("Rođen si.")</hoverable-code></code></pre>
         </div>
         <button class="complete-button" onclick="completeLesson('usporedjivanje')">
             Završi!
@@ -199,5 +169,4 @@
         <script defer>main()</script>
     </div>
 </body>
-
 </html>
