@@ -23,38 +23,33 @@
     </header>
     <div id="main">
         <h1>If naredba</h1>
+        <p>Definirajmo varijablu s koja će spremiti unos korisnika:</p>
         <div class="code-cont">
-            <pre><code class="language-python">s = input()</code></pre>
+            <pre><code class="language-python">a = int(input())</code></pre>
         </div>
-        <p style="white-space: pre-wrap; font-family: monospace;">| |
-            | -- Uzima unos korisnika i vraća string
-            -- Spremamo dobiveni string u varijablu s</p>
-        <p style="white-space: pre-wrap; font-family: monospace;">Ako je unos jednak stringu "Borna"
-            -- Varijabla koja sadrži unos korisnika
-            | -- Operator usporedbe (provjerava jesu li dvije vrijednosti jednake)
-            | | -- String s kojim uspoređujemo
-            | | |</p>
         <div class="code-cont">
-            <pre><code class="language-python">if s == "Borna":
-    print("Los") </code></pre>
+            <pre><code class="language-python"><hoverable-code enter="Ispisuje &quot;Paran je&quot; ako je unos bio paran broj (dijeljiv s 2)">if a % 2 == 0:
+    print("Paran je")</hoverable-code></code></pre>
         </div>
-        <p> Ispisuje "Los" ako je unos bio "Borna"</p>
-        <p>elif = else if, tj. "ako nije prethodno, ali je ovo istina"
-            Provjerava je li unos jednak stringu "Luka"</p>
+        <p> </p>
+        <p>elif = else if, tj. "ako nije prethodno bilo točno ali ovo je".</p>
         <div class="code-cont">
-            <pre><code class="language-python">elif s == "Luka":
-    print("Još gori") </code></pre>
+            <pre><code class="language-python"><hoverable-code enter="Ispisuje &quot;Neparan je&quot; ako je unos bio neparan broj (nije dijeljiv s 2)">elif a % 2 == 1:
+    print("Neparan je")</hoverable-code></code></pre>
         </div>
-        <p> Ispisuje "Još gori" ako je unos bio "Luka"</p>
+        <div class="code-cont">
+            <pre><code class="language-python"><hoverable-code enter="Ispisuje &quot;Dijeljiv s 3&quot; ako je unos bio broj dijeljiv s 3, a pošto je if, ne ovisi o prethodnom uvjetu">if a % 3 == 0:
+    print("Dijeljiv s 3")</hoverable-code></code></pre>
+        </div>
         <p>else = ako nije zadovoljen nijedan prethodni uvjet</p>
         <div class="code-cont">
-            <pre><code class="language-python">else:
-    print("idk") </code></pre>
+            <pre><code class="language-python"><hoverable-code enter="Ispisuje &quot;Nije dijeljiv s 3&quot; ako nije zadovoljen prethodni uvjet">else:
+    print("Nije dijeljiv s 3")</hoverable-code></code></pre>
         </div>
-        <p> Ispisuje "idk" ako unos nije ni "Borna" ni "Luka"</p>
         <button class="complete-button" onclick="completeLesson('if')">
             Završi!
         </button>
+        <script defer>main()</script>
     </div>
 </body>
 
