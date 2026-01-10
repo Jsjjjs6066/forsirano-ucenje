@@ -143,7 +143,7 @@ class Explainer extends HTMLElement {
         let prevInfo = infos[0];
         let margin = document.createElement('div');
         margin.className = 'margin';
-        margin.innerText = this.target.innerText.slice(0, Number(prevInfo.pos));
+        margin.innerText = this.target.innerText.split("\n").findLast((e) => e.length > 0).slice(0, Number(prevInfo.pos));
         this.appendChild(margin);
         let code = document.createElement('div');
         code.className = 'info'
@@ -152,7 +152,7 @@ class Explainer extends HTMLElement {
         }
         code.style.color = prevInfo.color;
         code.style.backgroundColor = prevInfo.color;
-        code.innerText = this.target.innerText.slice(Number(prevInfo.pos), Number(prevInfo.pos) + Number(prevInfo.size));
+        code.innerText = this.target.innerText.split("\n").findLast((e) => e.length > 0).slice(Number(prevInfo.pos), Number(prevInfo.pos) + Number(prevInfo.size));
         code.content = prevInfo.content;
         code.color = prevInfo.color;
         code.style.marginLeft = String(prevInfo.additionalPadding) + 'px';
@@ -162,7 +162,7 @@ class Explainer extends HTMLElement {
             let info = infos[i];
             let margin = document.createElement('div');
             margin.className = 'margin';
-            margin.innerText = this.target.innerText.slice(Number(prevInfo.pos) + Number(prevInfo.size), Number(info.pos));
+            margin.innerText = this.target.innerText.split("\n").findLast((e) => e.length > 0).slice(Number(prevInfo.pos) + Number(prevInfo.size), Number(info.pos));
             this.appendChild(margin);
             let code = document.createElement('div');
             code.className = 'info';
@@ -171,7 +171,7 @@ class Explainer extends HTMLElement {
             }
             code.style.color = info.color;
             code.style.backgroundColor = info.color;
-            code.innerText = this.target.innerText.slice(Number(info.pos), Number(info.pos) + Number(info.size));
+            code.innerText = this.target.innerText.split("\n").findLast((e) => e.length > 0).slice(Number(info.pos), Number(info.pos) + Number(info.size));
             code.content = info.content;
             code.color = info.color;
             code.style.marginLeft = String(info.additionalPadding) + 'px';
