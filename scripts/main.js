@@ -1,4 +1,4 @@
-const lessons = ["ispis", "varijable", "operatori", "string", "usporedjivanje", "if", "input"];
+const lessons = ["ispis", "varijable", "operatori", "string", "usporedjivanje", "if", "input", "liste-osnove"];
 
 function get_lessons() {
     lessons.forEach((lesson) => {

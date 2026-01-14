@@ -6,6 +6,7 @@ const textColor = getComputedStyle(document.documentElement).getPropertyValue("-
 const completeButtonColor = getComputedStyle(document.documentElement).getPropertyValue("--complete-button-color");
 const pure = getComputedStyle(document.documentElement).getPropertyValue("--pure");
 const pureInverted = getComputedStyle(document.documentElement).getPropertyValue("--pure-inverted");
+const secondaryColor = getComputedStyle(document.documentElement).getPropertyValue("--secondary-color");
 
 class HoverableCode extends HTMLElement {
     constructor() {
