@@ -1,7 +1,7 @@
-name: Deploy Multi-Branch Pages
+name: Deploy Multi-Branch Pages for lists
 on:
   push:
-    branches: [main, dev] # Trigger on changes to either branch
+    branches: [main, dev/migration/liste] # Trigger on changes to either branch
 
 permissions:
   contents: write
