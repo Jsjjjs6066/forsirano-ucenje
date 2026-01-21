@@ -93,6 +93,42 @@ print("l2 nakon dodavanja: ", l2)-->
             <div class="list-child">"b"</div>
         </div>
         <br>
+        <h2>Brisanje elementa liste po vrijednosti</h2>
+        <p><code class="language-python">remove</code> funkcija briše prvi element liste koji ima istu vrijednost kao argument. To se radi automatski. Duljina liste se smanjuje za 1. Ovdje je jedan primjer koji ignorira element koji smo dodali prije (4):</p>
+        <div class="code-cont">
+            <pre><code class="language-python"><hoverable-code enter="Brisanje elementa liste s vrijednosti 1">l2.remove(1)</hoverable-code></code></pre>
+            <explainer-cont>
+                <explainer-info hc-paddings="1" pos="0" size="2">Lista</explainer-info>
+                <explainer-info hc-paddings="0" pos="10 " size="1">Int (vrijednost)</explainer-info>
+            </explainer-cont>
+        </div>
+        <p>Nakon ovoga lista <code class="language-python">l2</code> je duljine 2 i izgleda ovako:</p>
+        <div class="list-cont">
+            <div class="list-child">2</div>
+            <div class="list-child">3</div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <p>Moramo zapamtiti da <code class="language-python">remove</code> funkcija briše samo prvi element koji ima istu vrijednost kao argument. Evo primjer kako to radi:</p>
+        <div class="code-cont">
+            <pre><code class="language-python"><hoverable-code enter="Brisanje elementa liste s vrijednosti 1">l4 = [2, 1, 3, 1, 4]
+l4.remove(1)</hoverable-code></code></pre>
+            <explainer-cont>
+                <explainer-info hc-paddings="1" pos="0" size="2">Lista</explainer-info>
+                <explainer-info hc-paddings="0" pos="10 " size="1">Int (vrijednost)</explainer-info>
+            </explainer-cont>
+        </div>
+        <p>Nakon ovoga lista <code class="language-python">l4</code> je duljine 4 i izgleda ovako:</p>
+        <div class="list-cont">
+            <div class="list-child">2</div>
+            <div class="list-child">3</div>
+            <div class="list-child">1</div>
+            <div class="list-child">4</div>
+        </div>
+        <br>
+        <br>
+        <br>
         <button class="complete-button" onclick="completeLesson('liste-dodavanje')">
             Završi!
         </button>
