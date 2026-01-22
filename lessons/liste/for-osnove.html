@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="hr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Osnove for petlje - Forsirano učenje</title>
+    <link rel="stylesheet" href="../../style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism.min.css" rel="stylesheet"
+        id="theme-style" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism-dark.min.css" rel="stylesheet"
+        media="(prefers-color-scheme: dark)" />
+    <script src="../../scripts/lessons.js"></script>
+    <link rel="shortcut icon" href="../../forsirano_ucenje.png" type="image/x-icon">
+    <link rel="icon" href="../../forsirano_ucenje.png" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <div id="nav">
+            <h1><a href="../../index.html" class="nav-link">Uvod</a> / Liste / Osnove for petlje</h1>
+        </div>
+    </header>
+    <div id="main">
+        <h1>Osnove for petlje</h1>
+        <h2>Struktura for petlje</h2>
+        <p>For petlja uvijek započinje s ključnom riječi <code>for</code> i zatim ime varijable koju ćemo koristiti (bilo koje ime ali najčešće se koristi <code>i</code> ili <code>index</code>). Nakon toga ide ključna riječ <code>in</code> i zatim ime varijable koja predstavlja skupinu podataka (najčešće lista) kroz koju će petlja iterirati (proć kroz nju od prvog do zadnjeg elementa). Za svaki element u liste od prvog do zadnjeg ćemo pokrenuti indentiran kod ispod dvotočke (<code>:</code>), a varijabla koju smo deklarirali ispred ključne riječi in će biti taj element.</p>
+        <h2><code>range</code> funkcija</h2>
+        <p><code>range</code> funkcija generira niz brojeva od 0 do broja koji joj se predaje kao argument (<code>[0, 1, ..., n - 1]</code>, gdje je <code>n</code> taj argument). Npr.:</p>
+        <ul>
+            <li><code>range(3)</code> &rarr; <code>[0, 1, 2]</code></li>
+            <li><code>range(1)</code> &rarr; <code>[0]</code></li>
+            <li><code>range(0)</code> &rarr; <code>[]</code></li>
+        </ul>
+        <p>Možemo i postaviti početnu (prvu) vrijednost korištenjem dva argumenta gdje je prvi početna vrijednost, a drugi nam govori do koje vrijednosti idemo. Točnije <code>range(x, n) = [x, x + 1, ..., n - 1]</code>. Npr.:</p>
+        <ul>
+            <li><code>range(1, 5)</code> &rarr; <code>[1, 2, 3, 4]</code></li>
+            <li><code>range(2, 3)</code> &rarr; <code>[2]</code></li>
+            <li><code>range(4, 4)</code> &rarr; <code>[]</code></li>
+        </ul>
+        <h2>Ponavljanje naredbe</h2>
+        <p>Najjednostavnija primjena for petlje je ponavljanje jedne ili više naredbi. Evo primjera: </p>
+        <div class="code-cont">
+            <pre><code class="language-python"><hoverable-code enter="Ispis:&lt;br&gt;Bok&lt;br&gt;Bok&lt;br&gt;Bok">for i in range(3):
+    print("Bok")</hoverable-code></code></pre>
+        </div>
+        <p>Taj kod ispisuje "Bok" tri puta. Idemo ga analizirati liniju po liniju:</p>
+        <div class="code-cont">
+            <pre><code class="language-python"><hoverable-code enter="Ponavlja sve indentirano ispod dvotočke tri puta">for i in range(3):</hoverable-code></code></pre>
+            <explainer-cont>
+                <explainer-info hc-paddings="1" pos="4" size="1">Varijabla <code>i</code> koja će ići od prvog do zadnjeg elementa liste</explainer-info>
+                <explainer-info hc-paddings="0" pos="9" size="8"><code>[0, 1, 2]</code></explainer-info>
+            </explainer-cont>
+        </div>
+        <div class="code-cont">
+            <pre><code class="language-python"><hoverable-code enter="Ponovit će se tri puta">    print("Bok")</hoverable-code></code></pre>
+        </div>
+        <h2>Korištenje varijable <code>i</code></h2>
+        <p>Možemo iskoristiti varijablu <code>i</code>:</p>
+        <div class="code-cont">
+            <pre><code class="language-python"><hoverable-code enter="Ispis:&lt;br&gt;0&lt;br&gt;1&lt;br&gt;2">for i in range(3):
+    print(i)</hoverable-code></code></pre>
+        </div>
+        <p>Ići će po svakom elementu liste <code>[0, 1, 2]</code> i ispisati će ga od prvog do zadnjeg.</p>
+        <button class="complete-button" onclick="completeLesson('for-osnove')">
+            Završi!
+        </button>
+        <script defer>main()</script>
+    </div>
+</body>
+
+</html>

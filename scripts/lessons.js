@@ -81,7 +81,7 @@ class Explainer extends HTMLElement {
                 siblings[i].style.backgroundColor = 'transparent';
             }
             let c = document.createElement('div');
-            c.innerText = element.content;
+            c.innerHTML = element.content;
             c.id = 'info-content';
             c.style.color = element.color;
             c.style.paddingLeft = '10px';
