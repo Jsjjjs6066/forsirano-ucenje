@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="hr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Napredno korištenje for petlje - Forsirano učenje</title>
+    <link rel="stylesheet" href="../../style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism.min.css" rel="stylesheet"
+        id="theme-style" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism-dark.min.css" rel="stylesheet"
+        media="(prefers-color-scheme: dark)" />
+    <script src="../../scripts/lessons.js"></script>
+    <link rel="shortcut icon" href="../../forsirano_ucenje.png" type="image/x-icon">
+    <link rel="icon" href="../../forsirano_ucenje.png" type="image/x-icon">
+</head>
+
+<body>
+    <!--# Idi kroz listu
+zbroj = 0 # Samo za primjer korištenja petlje
+for broj in l2:
+    zbroj += broj
+print("Zbroj elemenata u l2: ", zbroj)
+
+# Lijep ispis lista (svaki element u novom retku)
+print("l1:")
+for element in l1:
+    print(element)
+print("l2:")
+for element in l2:
+    print(element)
+print("l3:")
+for element in l3:
+    print(element)
+    
+# Lijep ispis lista (svi elementi u jednom retku, razdvojeni razmakom)
+print("l1:")
+for element in l1:
+    print(element, end=" ")
+print() # Novi red
+print("l2:")
+for element in l2:
+    print(element, end=" ")
+print() # Novi red
+print("l3:")
+for element in l3:
+    print(element, end=" ")
+    -->
+    <header>
+        <div id="nav">
+            <h1><a href="../../index.html" class="nav-link">Uvod</a> / Liste / Napredno korištenje for petlje</h1>
+        </div>
+    </header>
+    <div id="main">
+        <h1>Napredno korištenje for petlje</h1>
+        <h2>Varijable koje ćemo koristiti</h2>
+        <div class="code-cont remember">
+            <pre><code class="language-python"><hoverable-code enter="Prazna lista spremljena u varijablu l1">l1 = []</hoverable-code>
+<hoverable-code enter="Lista s tri inta spremljena u varijablu l2">l2 = [1, 2, 3]</hoverable-code>
+<hoverable-code enter="Lista s tri stringa spremljena u varijablu l3">l3 = ["a", "b", "c"]</hoverable-code></code></pre>
+        </div>
+        <h2>Ispisivanje elemenata liste</h2>
+        <p>Možemo ići kroz svaki element liste i ispisati ga.</p>
+        <div class="code-cont">
+            <pre><code class="language-python"><hoverable-code enter="Ispis elemenata liste l1 (prazno)">for element in l1:
+    print(element)</hoverable-code>
+<hoverable-code enter="Ispis elemenata liste l2:&lt;br&gt;1&lt;br&gt;2&lt;br&gt;3">for element in l2:
+    print(element)</hoverable-code>
+<hoverable-code enter="Ispis elemenata liste l3:&lt;br&gt;a&lt;br&gt;b&lt;br&gt;c">for element in l3:
+    print(element)
+</hoverable-code></code></pre>
+        </div>
+        <p>Možemo ih i ispisati u istoj liniji.</p>
+        <div class="code-cont">
+            <pre><code class="language-python"><hoverable-code enter="Ispis elemenata liste l1 (prazno)">for element in l1:
+    print(element, end=" ")</hoverable-code>
+<hoverable-code enter="Ispis elemenata liste l2: 1 2 3">for element in l2:
+    print(element, end=" ")</hoverable-code>
+<hoverable-code enter="Ispis elemenata liste l3: a b c">for element in l3:
+    print(element, end=" ")</hoverable-code></code></pre>
+        </div>
+        <p>Ispisivanje pomoću indeksa</p>
+        <div class="code-cont">
+            <pre><code class="language-python"><hoverable-code enter="Ispis elemenata liste l1 (prazno)">for i in range(len(l1)):
+    print(i, l1[i])</hoverable-code>
+<hoverable-code enter="Ispis elemenata liste l2:&lt;br&gt;0 1&lt;br&gt;1 2&lt;br&gt;2 3">for i in range(len(l2)):
+    print(i, l2[i])</hoverable-code>
+<hoverable-code enter="Ispis elemenata liste l3:&lt;br&gt;0 a&lt;br&gt;1 b&lt;br&gt;2 c">for i in range(len(l3)):
+    print(i, l3[i])</hoverable-code></code></pre>
+        </div>
+        <h2>Primjer zbroja elemenata liste</h2>
+        <p>Ide kroz svaki element liste i zbraja ga u varijablu <code>zbroj</code>.</p>
+        <div class="code-cont">
+            <pre><code class="language-python"><hoverable-code enter="Ispis: &lt;br&gt;Zbroj elemenata u l2: 6">zbroj = 0
+for broj in l2:
+    zbroj += broj
+print("Zbroj elemenata u l2:", zbroj)</hoverable-code></code></pre>
+        </div>
+        <h2>Primjer traženja najvećeg elementa liste</h2>
+        <p>Ide kroz svaki element liste i ako je veći od trenutnog najvećeg elementa, postavlja ga kao najveći.</p>
+        <div class="code-cont">
+            <pre><code class="language-python"><hoverable-code enter="Ispis: &lt;br&gt;Najveći element u l2: 3">najveci = l2[0]
+for broj in l2:
+    if broj > najveci:
+        najveci = broj
+print("Najveći element u l2:", najveci)</hoverable-code></code></pre>
+        </div>
+        <button class="complete-button" onclick="completeLesson('for-napredno')">
+            Završi!
+        </button>
+        <script defer>main()</script>
+    </div>
+</body>
+
+</html>
