@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forsirano učenje</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="/forsirano_ucenje.png" type="image/x-icon">
-    <link rel="icon" href="/forsirano_ucenje.png" type="image/x-icon">
+    <link rel="shortcut icon" href="forsirano_ucenje.png" type="image/x-icon">
+    <link rel="icon" href="forsirano_ucenje.png" type="image/x-icon">
 </head>
 
 <body>
@@ -18,46 +18,76 @@
         </div>
     </header>
     <div id="main">
-        <h1>Web prikaz materijala Forsiranoga učenja</h1>
-        <div class="section">
-            <center>
-                <h1 class="section-header">
-                    Osnove
-                </h1>
-            </center>
-            <div class="item" id="ispis-container">
-                <input class="lesson-checkbox" type="checkbox" name="ispis" id="ispis"
-                    onchange="check_section('ispis')">
-                <a class="lesson-link" href="lessons/osnove/ispis.html">Ispis</a>
+        <h1>Web prikaz materijala Forsiranog učenja</h1>
+        <div class="section-cont">
+            <div class="section">
+                <center>
+                    <h1 class="section-header">Osnove</h1>
+                </center>
+                <div class="item" id="ispis-container">
+                    <input class="lesson-checkbox" type="checkbox" name="ispis" id="ispis"
+                        onchange="check_section('ispis')">
+                    <a class="lesson-link" href="lessons/osnove/ispis.html">Ispis</a>
+                </div>
+                <div class="item" id="varijable-container">
+                    <input class="lesson-checkbox" type="checkbox" name="varijable" id="varijable"
+                        onchange="check_section('varijable')">
+                    <a class="lesson-link" href="lessons/osnove/varijable.html">Varijable</a>
+                </div>
+                <div class="item" id="operatori-container">
+                    <input class="lesson-checkbox" type="checkbox" name="operatori" id="operatori"
+                        onchange="check_section('operatori')">
+                    <a class="lesson-link" href="lessons/osnove/operatori.html">Operatori</a>
+                </div>
+                <div class="item" id="string-container">
+                    <input class="lesson-checkbox" type="checkbox" name="string" id="string"
+                        onchange="check_section('string')">
+                    <a class="lesson-link" href="lessons/osnove/string.html">String</a>
+                </div>
+                <div class="item" id="input-container">
+                    <input class="lesson-checkbox" type="checkbox" name="input" id="input"
+                        onchange="check_section('input')">
+                    <a class="lesson-link" href="lessons/osnove/input.html">Input</a>
+                </div>
+                <div class="item" id="if-container">
+                    <input class="lesson-checkbox" type="checkbox" name="if" id="if" onchange="check_section('if')">
+                    <a class="lesson-link" href="lessons/osnove/if.html">If naredba</a>
+                </div>
+                <div class="item" id="usporedjivanje-container">
+                    <input class="lesson-checkbox" type="checkbox" name="usporedjivanje" id="usporedjivanje"
+                        onchange="check_section('usporedjivanje')">
+                    <a class="lesson-link" href="lessons/osnove/usporedjivanje.html">Uspoređivanje</a>
+                </div>
             </div>
-            <div class="item" id="varijable-container">
-                <input class="lesson-checkbox" type="checkbox" name="varijable" id="varijable"
-                    onchange="check_section('varijable')">
-                <a class="lesson-link" href="lessons/osnove/varijable.html">Varijable</a>
-            </div>
-            <div class="item" id="operatori-container">
-                <input class="lesson-checkbox" type="checkbox" name="operatori" id="operatori"
-                    onchange="check_section('operatori')">
-                <a class="lesson-link" href="lessons/osnove/operatori.html">Operatori</a>
-            </div>
-            <div class="item" id="string-container">
-                <input class="lesson-checkbox" type="checkbox" name="string" id="string"
-                    onchange="check_section('string')">
-                <a class="lesson-link" href="lessons/osnove/string.html">String</a>
-            </div>
-            <div class="item" id="input-container">
-                <input class="lesson-checkbox" type="checkbox" name="input" id="input"
-                    onchange="check_section('input')">
-                <a class="lesson-link" href="lessons/osnove/input.html">Input</a>
-            </div>
-            <div class="item" id="if-container">
-                <input class="lesson-checkbox" type="checkbox" name="if" id="if" onchange="check_section('if')">
-                <a class="lesson-link" href="lessons/osnove/if.html">If naredba</a>
-            </div>
-            <div class="item" id="usporedjivanje-container">
-                <input class="lesson-checkbox" type="checkbox" name="usporedjivanje" id="usporedjivanje"
-                    onchange="check_section('usporedjivanje')">
-                <a class="lesson-link" href="lessons/osnove/usporedjivanje.html">Uspoređivanje</a>
+            <div class="section">
+                <center>
+                    <h1 class="section-header">Liste</h1>
+                </center>
+                <div class="item" id="liste-container">
+                    <input class="lesson-checkbox" type="checkbox" name="liste-osnove" id="liste-osnove"
+                        onchange="check_section('liste-osnove')">
+                    <a class="lesson-link" href="lessons/liste/osnove.html">Osnove</a>
+                </div>
+                <div class="item" id="liste-elementi-container">
+                    <input class="lesson-checkbox" type="checkbox" name="liste-elementi" id="liste-elementi"
+                        onchange="check_section('liste-elementi')">
+                    <a class="lesson-link" href="lessons/liste/elementi.html">Elementi lista</a>
+                </div>
+                <div class="item" id="liste-dodavanje-container">
+                    <input class="lesson-checkbox" type="checkbox" name="liste-dodavanje" id="liste-dodavanje"
+                        onchange="check_section('liste-dodavanje')">
+                    <a class="lesson-link" href="lessons/liste/dodavanje.html">Dodavanje i brisanje elemenata</a>
+                </div>
+                <div class="item" id="liste-for-container">
+                    <input class="lesson-checkbox" type="checkbox" name="for-osnove" id="for-osnove"
+                        onchange="check_section('for-osnove')">
+                    <a class="lesson-link" href="lessons/liste/for-osnove.html">Osnove for petlje</a>
+                </div>
+                <div class="item" id="liste-for-napredno-container">
+                    <input class="lesson-checkbox" type="checkbox" name="for-napredno" id="for-napredno"
+                        onchange="check_section('for-napredno')">
+                    <a class="lesson-link" href="lessons/liste/for-napredno.html">Napredno korištenje for petlje</a>
+                </div>
             </div>
         </div>
     </div>

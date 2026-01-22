@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="hr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Osnove lista - Forsirano učenje</title>
+    <link rel="stylesheet" href="../../style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism.min.css" rel="stylesheet"
+        id="theme-style" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism-dark.min.css" rel="stylesheet"
+        media="(prefers-color-scheme: dark)" />
+    <script src="../../scripts/lessons.js"></script>
+    <link rel="shortcut icon" href="../../forsirano_ucenje.png" type="image/x-icon">
+    <link rel="icon" href="../../forsirano_ucenje.png" type="image/x-icon">
+</head>
+
+<body>
+    <!--l1 = [] # Prazna lista
+l2 = [1, 2, 3] # Lista s tri inta
+l3 = ["a", "b", "c"] # Lista s tri stringa
+
+# Duljine lista
+print("Duljina l1: ", len(l1))
+print("Duljina l2: ", len(l2))
+print("Duljina l3: ", len(l3))
+
+# Ispis elemenata lista (ružni način koji se ne priznaje na natjecanjima)
+print("Elementi l1: ", l1)
+print("Elementi l2: ", l2)
+print("Elementi l3: ", l3)-->
+    <header>
+        <div id="nav">
+            <h1><a href="../../index.html" class="nav-link">Uvod</a> / Liste / Osnove</h1>
+        </div>
+    </header>
+    <div id="main">
+        <h1>Osnove lista</h1>
+        <h2>Definicija</h2>
+        <p>Lista je skupina elemenata koji su pohranjeni u jednoj varijabli. Listu definiramo unutar uglatih zagrada (<code class="language-python">[</code> i <code class="language-python">]</code>), a svaki se element odvaja zarezom. Moguće je i imati listu koja je prazna (<code class="language-python">[]</code>).</p>
+        <h2>Primer</h2>
+        <div class="code-cont remember">
+            <pre><code class="language-python"><hoverable-code enter="Prazna lista spremljena u varijablu l1">l1 = []</hoverable-code>
+<hoverable-code enter="Lista s tri inta spremljena u varijablu l2">l2 = [1, 2, 3]</hoverable-code>
+<hoverable-code enter="Lista s tri stringa spremljena u varijablu l3">l3 = ["a", "b", "c"]</hoverable-code></code></pre>
+        </div>
+        <h2>Duljina lista</h2>
+        <p>Duljina liste je broj njezinih elemenata. Npr. duljina liste <code class="language-python"><hoverable-code enter="[1, 2, 3]">l2</hoverable-code></code> je <code class="language-python">3</code> jer sadrži tri elementa. Duljinu liste možemo dobiti koristeći funkciju <code class="language-python">len</code>.</p>
+        <div class="code-cont">
+            <pre><code class="language-python"><hoverable-code enter="Ispis:
+0
+3
+3">print(len(l1))
+print(len(l2))
+print(len(l3))</hoverable-code></code></pre>
+            <explainer-cont>
+                <explainer-info hc-paddings="1" pos="6" size="7">Int</explainer-info>
+            </explainer-cont>
+            <explainer-cont>
+                <explainer-info hc-paddings="1" pos="10" size="2">Lista</explainer-info>
+            </explainer-cont>
+        </div>
+        <h2>Ispis liste</h2>
+        <p>Elemente liste možemo ispisati stavljajući listu u <code class="language-python">print</code>funkciju. Ovaj način se ne priznaje na natjecanjima. </p>
+        <div class="code-cont">
+            <pre><code class="language-python"><hoverable-code enter="Ispis:
+[]
+[1, 2, 3]
+['a', 'b', 'c']">print(l1)
+print(l2)
+print(l3)</hoverable-code></code></pre>
+        </div>
+        <button class="complete-button" onclick="completeLesson('liste-osnove')">
+            Završi!
+        </button>
+        <script defer>main()</script>
+    </div>
+</body>
+
+</html>

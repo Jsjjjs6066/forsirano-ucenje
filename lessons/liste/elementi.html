@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="hr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementi lista - Forsirano učenje</title>
+    <link rel="stylesheet" href="../../style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism.min.css" rel="stylesheet"
+        id="theme-style" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism-dark.min.css" rel="stylesheet"
+        media="(prefers-color-scheme: dark)" />
+    <script src="../../scripts/lessons.js"></script>
+    <link rel="shortcut icon" href="../../forsirano_ucenje.png" type="image/x-icon">
+    <link rel="icon" href="../../forsirano_ucenje.png" type="image/x-icon">
+</head>
+
+<body>
+    <!--# Pristupanje elementima lista
+print("Prvi element l2: ", l2[0])
+print("Drugi element l3: ", l3[1])
+print("Zadnji element l1: ", l2[len(l1)-1])
+print("Zadnji element l1: ", l2[-1])
+print("Pretjerani pristup l1: ", l1[0]) # Ovo će izazvati grešku
+
+# Modifikacija elemenata lista
+l2[0] = 10
+l3[1] = "z"
+print("Modificirani l2: ", l2)
+print("Modificirani l3: ", l3)-->
+    <header>
+        <div id="nav">
+            <h1><a href="../../index.html" class="nav-link">Uvod</a> / Liste / Osnove</h1>
+        </div>
+    </header>
+    <div id="main">
+        <h1>Elementi liste</h1>
+        <h2>Varijable koje ćemo koristiti</h2>
+        <div class="code-cont remember">
+            <pre><code class="language-python"><hoverable-code enter="Prazna lista spremljena u varijablu l1">l1 = []</hoverable-code>
+<hoverable-code enter="Lista s tri inta spremljena u varijablu l2">l2 = [1, 2, 3]</hoverable-code>
+<hoverable-code enter="Lista s tri stringa spremljena u varijablu l3">l3 = ["a", "b", "c"]</hoverable-code></code></pre>
+        </div>
+        <h2>Pristupanje elementima</h2>
+        <p>Elementima liste možemo pristupiti koristeći indeks. Indeksi počinju od 0, što znači da prvi element ima indeks 0, drugi element indeks 1, itd. Indeks stavljamo u uglate zagrade pokraj imena liste. Npr.: </p>
+        <div class="code-cont">
+            <pre><code class="language-python"><hoverable-code enter="Prvi element liste l2 (1)">print(l2[0])</hoverable-code></code></pre>
+            <explainer-cont>
+                <explainer-info hc-paddings="1" pos="6" size="5">Int (vrijednost)</explainer-info>
+            </explainer-cont>
+            <explainer-cont>
+                <explainer-info hc-paddings="1" pos="6" size="2">Lista</explainer-info>
+                <explainer-info hc-paddings="0" pos="9" size="1">Int (indeks)</explainer-info>
+            </explainer-cont>
+            <pre><code class="language-python"><hoverable-code enter="Drugi element liste l3 (b)">print(l3[1])</hoverable-code></code></pre>
+            <explainer-cont>
+                <explainer-info hc-paddings="1" pos="6" size="5">String (vrijednost)</explainer-info>
+            </explainer-cont>
+            <explainer-cont>
+                <explainer-info hc-paddings="1" pos="6" size="2">Lista</explainer-info>
+                <explainer-info hc-paddings="0" pos="9" size="1">Int (indeks)</explainer-info>
+            </explainer-cont>
+        </div>
+        <h2>Dobivanje zadnjeg elementa</h2>
+        <p>Pošto je indeks uvijek za jedan manji od rednog broja elementa (indeks prvog elementa je 0, indeks drugog elementa je 1, itd.), možemo koristiti len() funkciju kako bismo dobili redni broj zadnjeg elementa i smanjimo ga za jedan da dobijemo indeks.</p>
+        <div class="code-cont">
+            <pre><code class="language-python"><hoverable-code enter="Zadnji element liste l2 (3)">print(l2[len(l2) - 1])</hoverable-code></code></pre>
+            <explainer-cont>
+                <explainer-info hc-paddings="1" pos="9" size="7">Int (duljina liste)</explainer-info>
+                <explainer-info hc-paddings="0" pos="19" size="1">Int (1)</explainer-info>
+            </explainer-cont>
+        </div>
+        <p>Lakši način za dobiti zadnji element liste je koristiti negativni indeks. </p>
+        <div class="code-cont">
+            <pre><code class="language-python"><hoverable-code enter="Zadnji element liste l2 (3)">print(l2[-1])</hoverable-code></code></pre>
+            <explainer-cont>
+                <explainer-info hc-paddings="1" pos="6" size="2">Lista</explainer-info>
+                <explainer-info hc-paddings="0" pos="9" size="2">Int (indeks)</explainer-info>
+            </explainer-cont>
+        </div>
+        <h2>Modifikacija elemenata</h2>
+        <p>Kada smo dobili element liste, možemo ga modificirati stavljajući jednako pokraj njega. </p>
+        <div class="code-cont">
+            <pre><code class="language-python"><hoverable-code enter="Zadnji element liste l2 (3)">l2[0] = 10</hoverable-code></code></pre>
+            <explainer-cont>
+                <explainer-info hc-paddings="1" pos="0" size="2">Lista</explainer-info>
+                <explainer-info hc-paddings="0" pos="3" size="1">Int (indeks)</explainer-info>
+                <explainer-info hc-paddings="0" pos="8" size="2">Vrijednost (int)</explainer-info>
+            </explainer-cont>
+        </div>
+        <p>Nakon ovoga lista <code class="language-python">l2</code> izgleda ovako:</p>
+        <div class="list-cont">
+            <div class="list-child">10</div>
+            <div class="list-child">2</div>
+            <div class="list-child">3</div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="code-cont">
+            <pre><code class="language-python"><hoverable-code enter="Zadnji element liste l2 (3)">l3[1] = "z"</hoverable-code></code></pre>
+            <explainer-cont>
+                <explainer-info hc-paddings="1" pos="0" size="2">Lista</explainer-info>
+                <explainer-info hc-paddings="0" pos="3" size="1">Int (indeks)</explainer-info>
+                <explainer-info hc-paddings="0" pos="8" size="3">Vrijednost (string)</explainer-info>
+            </explainer-cont>
+        </div>
+        <p>Nakon ovoga lista <code class="language-python">l3</code> izgleda ovako:</p>
+        <div class="list-cont">
+            <div class="list-child">"a"</div>
+            <div class="list-child">"z"</div>
+            <div class="list-child">"c"</div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="code-cont">
+            <pre><code class="language-python"><hoverable-code enter="Zadnji element liste l2 (3)">l2[-1] = 4</hoverable-code></code></pre>
+            <explainer-cont>
+                <explainer-info hc-paddings="1" pos="0" size="2">Lista</explainer-info>
+                <explainer-info hc-paddings="0" pos="3" size="2">Int (indeks)</explainer-info>
+                <explainer-info hc-paddings="0" pos="9" size="1">Vrijednost (int)</explainer-info>
+            </explainer-cont>
+        </div>
+        <p>Nakon ovoga lista <code class="language-python">l2</code> izgleda ovako:</p>
+        <div class="list-cont">
+            <div class="list-child">10</div>
+            <div class="list-child">2</div>
+            <div class="list-child">4</div>
+        </div>
+        <br>
+        <button class="complete-button" onclick="completeLesson('liste-elementi')">
+            Završi!
+        </button>
+        <script defer>main()</script>
+    </div>
+</body>
+
+</html>

@@ -6,6 +6,7 @@ const textColor = getComputedStyle(document.documentElement).getPropertyValue("-
 const completeButtonColor = getComputedStyle(document.documentElement).getPropertyValue("--complete-button-color");
 const pure = getComputedStyle(document.documentElement).getPropertyValue("--pure");
 const pureInverted = getComputedStyle(document.documentElement).getPropertyValue("--pure-inverted");
+const secondaryColor = getComputedStyle(document.documentElement).getPropertyValue("--secondary-color");
 
 class HoverableCode extends HTMLElement {
     constructor() {
@@ -80,7 +81,7 @@ class Explainer extends HTMLElement {
                 siblings[i].style.backgroundColor = 'transparent';
             }
             let c = document.createElement('div');
-            c.innerText = element.content;
+            c.innerHTML = element.content;
             c.id = 'info-content';
             c.style.color = element.color;
             c.style.paddingLeft = '10px';

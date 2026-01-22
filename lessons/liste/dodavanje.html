@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="hr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dodavanje i brisanje elemenata liste - Forsirano učenje</title>
+    <link rel="stylesheet" href="../../style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism.min.css" rel="stylesheet"
+        id="theme-style" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism-dark.min.css" rel="stylesheet"
+        media="(prefers-color-scheme: dark)" />
+    <script src="../../scripts/lessons.js"></script>
+    <link rel="shortcut icon" href="../../forsirano_ucenje.png" type="image/x-icon">
+    <link rel="icon" href="../../forsirano_ucenje.png" type="image/x-icon">
+</head>
+
+<body>
+    <!--# Dodavanje elemenata na kraj liste
+l1.append(5)
+l2.append(4)
+print("l1 nakon dodavanja: ", l1)
+print("l2 nakon dodavanja: ", l2)-->
+    <header>
+        <div id="nav">
+            <h1><a href="../../index.html" class="nav-link">Uvod</a> / Liste / Dodavanje i brisanje elemenata</h1>
+        </div>
+    </header>
+    <div id="main">
+        <h1>Dodavanje i brisanje elemenata</h1>
+        <h2>Varijable koje ćemo koristiti</h2>
+        <div class="code-cont remember">
+            <pre><code class="language-python"><hoverable-code enter="Prazna lista spremljena u varijablu l1">l1 = []</hoverable-code>
+<hoverable-code enter="Lista s tri inta spremljena u varijablu l2">l2 = [1, 2, 3]</hoverable-code>
+<hoverable-code enter="Lista s tri stringa spremljena u varijablu l3">l3 = ["a", "b", "c"]</hoverable-code></code></pre>
+        </div>
+        <h2>Dodavanje elemenata na kraj liste</h2>
+        <p>Dodavanjem na kraj liste prvo povećamo duljinu liste za 1 pa na zadnji element postavimo vrijednost koju dodajemo. To se radi automatski. Nakon dodavanja elementa se duljina poveća za 1.</p>
+        <div class="code-cont">
+            <pre><code class="language-python"><hoverable-code enter="Dodavanje 5 na kraj liste">l1.append(5)</hoverable-code></code></pre>
+            <explainer-cont>
+                <explainer-info hc-paddings="1" pos="0" size="2">Lista</explainer-info>
+                <explainer-info hc-paddings="0" pos="10" size="1">Int (vrijednost)</explainer-info>
+            </explainer-cont>
+        </div>
+        <p>Nakon ovoga lista <code class="language-python">l1</code> je duljine 1 i izgleda ovako:</p>
+        <div class="list-cont">
+            <div class="list-child">5</div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="code-cont">
+            <pre><code class="language-python"><hoverable-code enter="Dodavanje 4 na kraj liste">l2.append(4)</hoverable-code></code></pre>
+            <explainer-cont>
+                <explainer-info hc-paddings="1" pos="0" size="2">Lista</explainer-info>
+                <explainer-info hc-paddings="0" pos="10" size="1">Int (vrijednost)</explainer-info>
+            </explainer-cont>
+        </div>
+        <p>Nakon ovoga lista <code class="language-python">l2</code> je duljine 4 i izgleda ovako:</p>
+        <div class="list-cont">
+            <div class="list-child">1</div>
+            <div class="list-child">2</div>
+            <div class="list-child">3</div>
+            <div class="list-child">4</div>
+        </div>
+        <br>
+        <h2>Brisanje elemenata liste s kraja</h2>
+        <p><code class="language-python">pop</code> funkcija bez argumenta briše zadnji element liste. To se radi automatski. Duljina liste se smanjuje za 1.</p>
+        <div class="code-cont">
+            <pre><code class="language-python"><hoverable-code enter="Brisanje zadnjeg elementa liste">l3.pop()</hoverable-code></code></pre>
+            <explainer-cont>
+                <explainer-info hc-paddings="1" pos="0" size="2">Lista</explainer-info>
+            </explainer-cont>
+        </div>
+        <p>Nakon ovoga lista <code class="language-python">l3</code> je duljine 2 i izgleda ovako:</p>
+        <div class="list-cont">
+            <div class="list-child">"a"</div>
+            <div class="list-child">"b"</div>
+        </div>
+        <br>
+        <h2>Brisanje elemenata liste s određenog indeksa</h2>
+        <p><code class="language-python">pop</code> funkcija s argumentom indeksa briše element liste koji se nalazi na tom indeksu. To se radi automatski. Duljina liste se smanjuje za 1.</p>
+        <div class="code-cont">
+            <pre><code class="language-python"><hoverable-code enter="Brisanje elementa liste s indeksa 1">l3.pop(0)</hoverable-code></code></pre>
+            <explainer-cont>
+                <explainer-info hc-paddings="1" pos="0" size="2">Lista</explainer-info>
+                <explainer-info hc-paddings="0" pos="7" size="1">Int (indeks)</explainer-info>
+            </explainer-cont>
+        </div>
+        <p>Nakon ovoga lista <code class="language-python">l3</code> je duljine 1 i izgleda ovako:</p>
+        <div class="list-cont">
+            <div class="list-child">"b"</div>
+        </div>
+        <br>
+        <h2>Brisanje elementa liste po vrijednosti</h2>
+        <p><code class="language-python">remove</code> funkcija briše prvi element liste koji ima istu vrijednost kao argument. To se radi automatski. Duljina liste se smanjuje za 1. Ovdje je jedan primjer koji ignorira element koji smo dodali prije (4):</p>
+        <div class="code-cont">
+            <pre><code class="language-python"><hoverable-code enter="Brisanje elementa liste s vrijednosti 1">l2.remove(1)</hoverable-code></code></pre>
+            <explainer-cont>
+                <explainer-info hc-paddings="1" pos="0" size="2">Lista</explainer-info>
+                <explainer-info hc-paddings="0" pos="10 " size="1">Int (vrijednost)</explainer-info>
+            </explainer-cont>
+        </div>
+        <p>Nakon ovoga lista <code class="language-python">l2</code> je duljine 2 i izgleda ovako:</p>
+        <div class="list-cont">
+            <div class="list-child">2</div>
+            <div class="list-child">3</div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <p>Moramo zapamtiti da <code class="language-python">remove</code> funkcija briše samo prvi element koji ima istu vrijednost kao argument. Evo primjer kako to radi:</p>
+        <div class="code-cont">
+            <pre><code class="language-python"><hoverable-code enter="Brisanje elementa liste s vrijednosti 1">l4 = [2, 1, 3, 1, 4]
+l4.remove(1)</hoverable-code></code></pre>
+            <explainer-cont>
+                <explainer-info hc-paddings="1" pos="0" size="2">Lista</explainer-info>
+                <explainer-info hc-paddings="0" pos="10 " size="1">Int (vrijednost)</explainer-info>
+            </explainer-cont>
+        </div>
+        <p>Nakon ovoga lista <code class="language-python">l4</code> je duljine 4 i izgleda ovako:</p>
+        <div class="list-cont">
+            <div class="list-child">2</div>
+            <div class="list-child">3</div>
+            <div class="list-child">1</div>
+            <div class="list-child">4</div>
+        </div>
+        <br>
+        <button class="complete-button" onclick="completeLesson('liste-dodavanje')">
+            Završi!
+        </button>
+        <script defer>main()</script>
+    </div>
+</body>
+
+</html>
