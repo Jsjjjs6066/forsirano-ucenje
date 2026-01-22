@@ -1,5 +1,5 @@
 :root {
-    --primary-color: #dbcd34;
+    --primary-color: #e6b72b;
     /* Light theme primary color */
     --background-color: #ffffff;
     /* Light theme background */
@@ -17,6 +17,7 @@
 
 @media (prefers-color-scheme: dark) {
     :root {
+        --primary-color: #dbcd34;
         /* Dark theme primary color */
         --background-color: #1a1a1a;
         /* Dark theme background */
