@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="hr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Napredno korištenje for petlje - Forsirano učenje</title>
+    <link rel="stylesheet" href="../../style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism.min.css" rel="stylesheet"
+        id="theme-style" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism-dark.min.css" rel="stylesheet"
+        media="(prefers-color-scheme: dark)" />
+    <script src="../../scripts/lessons.js"></script>
+    <link rel="shortcut icon" href="../../forsirano_ucenje.png" type="image/x-icon">
+    <link rel="icon" href="../../forsirano_ucenje.png" type="image/x-icon">
+</head>
+
+<body>
+    <!--# Idi kroz listu
+zbroj = 0 # Samo za primjer korištenja petlje
+for broj in l2:
+    zbroj += broj
+print("Zbroj elemenata u l2: ", zbroj)
+
+# Lijep ispis lista (svaki element u novom retku)
+print("l1:")
+for element in l1:
+    print(element)
+print("l2:")
+for element in l2:
+    print(element)
+print("l3:")
+for element in l3:
+    print(element)
+    
+# Lijep ispis lista (svi elementi u jednom retku, razdvojeni razmakom)
+print("l1:")
+for element in l1:
+    print(element, end=" ")
+print() # Novi red
+print("l2:")
+for element in l2:
+    print(element, end=" ")
+print() # Novi red
+print("l3:")
+for element in l3:
+    print(element, end=" ")
+    -->
+    <header>
+        <div id="nav">
+            <h1><a href="../../index.html" class="nav-link">Uvod</a> / Liste / Zadatak</h1>
+        </div>
+    </header>
+    <div id="main">
+        <h1>Zadatak</h1>
+        <p>Imate listu cijelih brojeva duljine <code>n</code> imena <code>x</code>.                         
+Vaš je zadatak ispisati najmanji broj u listi <code>x</code> i njegov indeks 
+te najveći broj u listi <code>x</code> i njegov indeks. </p>
+        <h2>Unos</h2>
+        <p>U prvom retku nalazi se cijeli broj <code>n</code> (<code>0 < n <= 100</code>), duljina 
+liste <code>x</code>. 
+U sljedećih n redaka nalaze se elementi liste gdje za svaki 
+element liste <code>x</code> vrijedi 
+(<code>0 <= x<sub>i</sub> <= 100</code>, <code>1 <= i <= n</code>).  </p>
+        <h2>Izlaz</h2>
+        <p>U prvom retku ispišite najmanji broj u listi <code>x</code> i njegov indeks 
+(gdje vrijedi da je prvi indeks <code>0</code>).                                           
+U drugom retku ispišite najveći broj u listi <code>x</code> i njegov indeks 
+(gdje vrijedi da je prvi indeks <code>0</code>).                                           </p>
+        <h2>Primjer:</h2>
+        <div class="section">
+            <h3>Ulaz</h3>
+            <div class="text-block">
+                <pre class="block">
+6
+2
+1
+4
+3
+6
+5</pre>
+            </div>
+            <h3>Izlaz</h3>
+            <div class="text-block">
+                <pre class="block">
+1 1
+6 4</pre>
+            </div>
+        </div>
+        <button class="complete-button" onclick="completeLesson('liste-zadatak')">
+            Završi!
+        </button>
+        <script defer>main()</script>
+    </div>
+</body>
+
+</html>

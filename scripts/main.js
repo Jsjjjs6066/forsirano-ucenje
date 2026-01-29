@@ -1,4 +1,4 @@
-const lessons = ["ispis", "varijable", "operatori", "string", "usporedjivanje", "if", "input", "liste-osnove", "liste-elementi", "liste-dodavanje", "for-osnove", "for-napredno"];
+const lessons = ["ispis", "varijable", "operatori", "string", "usporedjivanje", "if", "input", "liste-osnove", "liste-elementi", "liste-dodavanje", "for-osnove", "for-napredno", "liste-zadatak"];
 const version = "1-liste";
 let last_version = version;
 
