@@ -32,6 +32,10 @@
     }
 }
 
+input[type="file"], input[type="submit"], label {
+    font-size: 1.5em;
+}
+
 sub {
     font-style: italic;
     font-size: 0.75em;
@@ -350,3 +354,31 @@ pre {
 li {
     font-size: 1.5em;
 }
+
+.file-upload,
+input[type="submit"] {
+    font-size: 2.5em;
+    cursor: pointer;
+    background-color: transparent;
+    padding: 5px;
+    border-radius: 10px;
+    border: 5px solid var(--pure-inverted);
+    -webkit-tap-highlight-color: transparent;
+    padding: 0;
+    color: var(--pure-inverted);
+}
+
+.file-upload:hover,
+input[type="submit"]:hover {
+    background-color: var(--pure-inverted);
+    color: var(--pure);
+}
+
+input[type="file"] {
+    display: none;
+}
+
+form {
+    margin-top: 50px;
+}
+

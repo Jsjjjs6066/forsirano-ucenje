@@ -13,6 +13,10 @@
     <script src="../../scripts/lessons.js"></script>
     <link rel="shortcut icon" href="../../forsirano_ucenje.png" type="image/x-icon">
     <link rel="icon" href="../../forsirano_ucenje.png" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/pyodide/v0.29.3/full/pyodide.js"></script>
+    <script>
+        
+</script>
 </head>
 
 <body>
@@ -87,9 +91,82 @@ U drugom retku ispišite najveći broj u listi <code>x</code> i njegov indeks
 6 4</pre>
             </div>
         </div>
-        <button class="complete-button" onclick="completeLesson('liste-zadatak')">
+        <form onsubmit="onUploadSubmit(event)">
+            <label for="upload" class="file-upload">Choose file</label>
+            <input type="file" name="upload" id="upload">
+            <input type="submit" value="Submit" id="submit">
+        </form>
+        <!-- <button class="complete-button" onclick="completeLesson('liste-zadatak')">
             Završi!
-        </button>
+        </button> -->
+        <script defer>
+            let pyodide;
+            let ct = "";
+async function setupPyodide() {
+            pyodide = await loadPyodide();
+            pyodide.setStdin({
+            stdin: () => {
+                // You could pull from a pre-filled array or a custom UI buffer
+                return `6
+2
+1
+4
+3
+6
+5`;
+            }
+        });
+        pyodide.setStdout({
+            batched: (text) => {
+                // console.log(text);
+                ct += text + "\n";
+                console.log(ct);
+            }
+        });
+    }
+    document.getElementById("submit").disabled = true;
+    setupPyodide();
+    document.getElementById("upload").addEventListener("change", () => {
+        document.getElementById("submit").disabled = false;
+    });
+
+            async function onUploadSubmit(event) {
+                event.preventDefault();
+                const fileInput = document.getElementById('upload');
+                const file = fileInput.files[0];
+                if (!file) return;
+
+                // 1. Read file as an ArrayBuffer
+                const arrayBuffer = await file.arrayBuffer();
+                const uint8Array = new Uint8Array(arrayBuffer);
+
+                // 2. Write file to Pyodide's virtual file system
+                // This creates a file named "data.txt" inside the browser memory
+                pyodide.FS.writeFile("data.txt", uint8Array);
+                try {
+                await pyodide.runPythonAsync(`
+                    with open("data.txt", "r") as file:
+                        content = file.read()
+                        exec(content)
+                `);
+                } catch (error) {
+                    console.log(error);
+                    alert("Nije ispravno! (error)");
+                    location.reload();
+                }
+                console.log(ct);
+                 if (ct == `1 1
+6 4
+`) {
+                    alert("Ispravno!");
+                     completeLesson('liste-zadatak');
+                 }
+                 else {
+                     alert("Nije ispravno!");
+                    location.reload();
+                 }
+            }
+        </script>
         <script defer>main()</script>
     </div>
 </body>
